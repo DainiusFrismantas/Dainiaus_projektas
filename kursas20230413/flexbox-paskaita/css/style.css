@@ -1,0 +1,61 @@
+body {
+    margin:0 auto;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+
+}
+
+header, footer {
+    height:7vh;
+    background-color: lightskyblue;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+main {
+    height:86vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding: 0 20px;
+}
+
+img {
+    margin-top: 10px;
+    
+}
+
+div {
+    padding: 0 20px;
+}
+
+button {
+    width:150px;
+    height:50px;
+    background-color:lightskyblue;
+    border:none;
+    border-radius:5px;
+    color:white;
+    font-size:16px;
+
+}
+
+@media screen and (min-width:650px) {
+    main {
+        flex-direction:row;
+        align-items: flex-start;
+
+    }
+}
+/*article {
+    border: 2px solid #000;
+    display:flex;
+    flex-direction:column;
+}
+
+/*
+Flexbox veikia tik ant tiesioginių vaikų
+Flex container - valdo vaikų išdėstymą
+*/
