@@ -2,44 +2,36 @@
     display:grid;
     grid-template: repeat(3, 50px)/repeat(4, 1fr);
     grid-template-rows: 200px 200px 200px;
-    grid-gap:10px 10px;
+    grid-gap:10px;
     background-color: #ffeead;
     padding: 10px;
-
+    grid-template-areas:
+    "r r r r"
+    "b b g g"
+    "b b p1 p2";
 }
 
 .red{
-    display:grid;
     background-color: red;
     grid-area: r;
-    grid-column: 1 / span 2; 
 }
 
 .blue{
-    display:grid;
     background-color: blue;
-    grid-column: 1/ span 2;
-    grid-row: 2/ span 4;
+    grid-area: b;
 }
 
 .green{
-    display:grid;
     background-color: green;
-    grid-column: 3/ span 2;
-    grid-row: 2/ span 1;
+    grid-area: g;
 }
 
 .purple1{
-    display:grid;
     background-color: purple;
-    grid-column: 3/ span 1;
-    grid-row: 3/ span 3;
+    grid-area: p1;
 }
 
 .purple2{
-    display:grid;
     background-color: purple;
-    grid-column: 4/ span 1;
-    grid-row: 3/ span 3;
+    grid-area: p2;
 }
-
