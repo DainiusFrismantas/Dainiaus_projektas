@@ -37,3 +37,7 @@
     background-color: grey;
     grid-area: f;
 }
+
+@media screen and (min-width:650px) {
+    
+}
