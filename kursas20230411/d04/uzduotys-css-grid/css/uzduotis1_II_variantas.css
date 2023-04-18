@@ -12,30 +12,25 @@
      grid-area: r;
      display:grid;
      background-color: red;
-     grid-column: 1 / span 2; 
 }
 
 .blue {
     grid-area: b;
     background-color: blue;
-    grid-column: 3/ span 4;
 }
 
 
 .green {
     grid-area: g;
     background-color: green;
-    grid-column: 1/ span 1;
 }
 
 .purple {
     grid-area: p;
     background-color: purple;
-    grid-column: 2/ span 5;
 }
 
 .yellow {
     grid-area: ye;
     background-color: yellow;
-    grid-column: 1/ span 6;
 }
