@@ -1,0 +1,33 @@
+.container {
+    display:grid;
+    grid-template: repeat(3, 50px)/repeat(4, 1fr);
+    grid-gap:5px;
+    background-color: #ffeead;
+}
+
+.red{
+    display:grid;
+    background-color: red;
+    grid-column: 1 / span 5; 
+}
+
+.blue{
+    display:grid;
+    background-color: blue;
+    grid-column: 1/ span 2;
+    grid-row: 2/ span4
+}
+
+.green{
+    display:grid;
+    background-color: green;
+    grid-column: 3/ span 4;
+    grid-row: 2/ span 1;
+}
+
+.purple{
+    display:grid;
+    background-color: purple;
+    grid-column: 3/ span 4;
+    grid-row: 3/ span 1;
+}
