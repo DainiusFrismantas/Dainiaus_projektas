@@ -4,25 +4,37 @@
     grid-gap:5px;
     background-color: #ffeead;
     grid-template-areas:
-    "r r r r b b b b"
-    "g g p p p p p p"
-    "y y y y y y y y"
+    "r r b b"
+    "g g p p"
+    "ye ye ye ye";
 }
-.red{
-    grid-area:r
-}
-
-.blue{
-    grid-area:b
+.red {
+     grid-area: r;
+     display:grid;
+     background-color: red;
 }
 
-.green{
-    grid-area:g
-}
-.purple{
-    grid-area:p
+.blue {
+    grid-area: b;
+    background-color: blue;
+    grid-column: 3/ span 4;
 }
 
-.yellow{
-    grid-area:y
+
+.green {
+    grid-area: g;
+    background-color: green;
+    grid-column: 1/ span 1;
+}
+
+.purple {
+    grid-area: p;
+    background-color: purple;
+    grid-column: 2/ span 5;
+}
+
+.yellow {
+    grid-area: ye;
+    background-color: yellow;
+    grid-column: 1/ span 6;
 }
