@@ -1,0 +1,40 @@
+.container {
+    display:grid;
+    grid-template: repeat(3, 50px)/repeat(4, 1fr);
+    grid-gap:5px;
+    background-color: #ffeead;
+    grid-template-areas:
+    "r r b b"
+    "g g p p"
+    "ye ye ye ye";
+}
+.red {
+     grid-area: r;
+     display:grid;
+     background-color: red;
+}
+
+.blue {
+    grid-area: b;
+    background-color: blue;
+    grid-column: 3/ span 4;
+}
+
+
+.green {
+    grid-area: g;
+    background-color: green;
+    grid-column: 1/ span 1;
+}
+
+.purple {
+    grid-area: p;
+    background-color: purple;
+    grid-column: 2/ span 5;
+}
+
+.yellow {
+    grid-area: ye;
+    background-color: yellow;
+    grid-column: 1/ span 6;
+}
