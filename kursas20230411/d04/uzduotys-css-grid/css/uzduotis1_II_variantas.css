@@ -12,6 +12,7 @@
      grid-area: r;
      display:grid;
      background-color: red;
+     grid-column: 1 / span 2; 
 }
 
 .blue {
