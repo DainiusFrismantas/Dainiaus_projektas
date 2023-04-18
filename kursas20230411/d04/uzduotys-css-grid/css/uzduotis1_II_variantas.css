@@ -5,7 +5,7 @@
     background-color: #ffeead;
     grid-template-areas:
     "r r b b"
-    "g g p p"
+    "g p p p"
     "ye ye ye ye";
 }
 .red {
