@@ -6,31 +6,26 @@
     grid-template-areas:
     "r r b b"
     "g p p p"
-    "ye ye ye ye";
-}
+    "ye ye ye ye";}
+    
 .red {
      grid-area: r;
      display:grid;
-     background-color: red;
-}
+     background-color: red;}
 
 .blue {
     grid-area: b;
-    background-color: blue;
-}
+    background-color: blue;}
 
 
 .green {
     grid-area: g;
-    background-color: green;
-}
+    background-color: green;}
 
 .purple {
     grid-area: p;
-    background-color: purple;
-}
+    background-color: purple;}
 
 .yellow {
     grid-area: ye;
-    background-color: yellow;
-}
+    background-color: yellow;}

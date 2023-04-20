@@ -47,14 +47,13 @@
         grid-template-rows: 50px 300px 75px 50px;
         grid-template-columns: 100px 300px;
         grid-gap:10px;
-        background-color: #b0ffad;
+        background-color: #d7ded7;
         padding: 10px;
         grid-template-areas:
         "h h"
         "s1 c"
         "s2 s2"
-        "f f";
-    }
+        "f f"; }
 }
 
 /* PHONE ----------- */
@@ -64,14 +63,12 @@
         grid-template: repeat(5, 50px)/repeat(1, 1fr);
         grid-template-rows: 25px 50px 400px 50px 25px;
         grid-gap:10px;
-        background-color: #ffeead;
+        background-color: #dcdad4;
         padding: 10px;
         grid-template-areas:
         "h"
         "s1"
         "c"
         "s2"
-        "f";
-    }
-    
+        "f"; }   
 }
