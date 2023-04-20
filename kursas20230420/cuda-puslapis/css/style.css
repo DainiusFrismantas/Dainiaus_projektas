@@ -1,0 +1,179 @@
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+html{
+    font-size:16px;
+    font-family:'Titillium Web',sans-serif;
+}
+
+body{
+    margin:0;
+}
+
+.site-header{
+    background-color: #87509c;
+    position:fixed; 
+    /*viršutinis headeris lieka slenkant per puslapį position:fixed*/
+    width:100%;
+    display:block;}
+
+.container{
+    max-width:1140px;
+    width:100%;
+    margin:0 auto;
+    padding:0 20 px;
+}
+
+.flex-container{display:flex;}
+
+.site-header .container{
+    justify-content: space-between;
+    align-items:center;
+
+}
+
+.main-nav li{
+    list-style:none;
+
+}
+
+.main-nav a{
+    color:white;
+    text-transform:uppercase;
+    text-decoration:none;
+    font-size:1rem;
+    margin: 0 5px;
+    padding: 10px 17px;
+
+}
+
+.main-nav a:hover, .main-nav a:active{
+    background-color:#643a79;
+    border-radius:5px;
+
+
+}
+
+.logo{
+    padding:55px 0;
+}
+
+/* HERO */
+.hero{
+    background-color:#87509c;
+    text-align:center;
+    padding-top:100px;
+}
+
+section > .container{
+    padding:120px 0;
+}
+
+.hero h1{
+    color:#f7f3ea;
+    font-size:2.625rem;
+    line-height:1.1428;
+}
+
+.hero a{
+    font-size:1.125rem;
+    letter-spacing:0.02em;
+    color:white;
+    text-transform:uppercase;
+    text-decoration:none;
+    background-color:#eb7d4b;
+    padding:28px 82px 25px;
+    border-radius:5px;
+    border-bottom:4px solid #c86a40;
+    margin-top:40px;
+    display:inline-block;
+    cursor:pointer;
+}
+
+/*SERVICES*/
+.services{
+    background-color:#17c2a4;
+}
+
+.section-heading{
+    text-align:center;
+    color:white;
+
+}
+
+.section-heading h2{
+    font-size:2.5rem;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+
+}
+
+.section-heading h2:after{
+    content:"";
+    display:block;
+    width:90px;
+    border-top:4px solid #14a58c;
+    margin:22px auto;
+}
+
+.container a, .container p, .container h3{
+    font-size:1.125rem;
+    letter-spacing:0.02em;
+}
+
+.section-heading p{
+    max-width:610px;
+    margin: 0 auto;
+    line-height:1.625;
+}
+
+.service{
+    text-align:center;
+    color:white;
+    max-width:200px;
+    margin:80px auto 0;
+}
+
+.service h3{
+    text-transform:uppercase;
+    font-weight: 700;
+    font-size:1.5rem;
+
+}
+
+.services p{
+    font-size:1rem;
+    line-height:1.5;
+    font-weight:300;
+
+}
+
+/*CONTACT*/
+.contact{
+    background-color: #3c5499;
+    color:white;
+}
+
+.contact .container{
+    padding-bottom:60px;
+
+}
+
+.contact .section-heading h2:after{
+    border-color:#273a71;
+}
+
+.contact .section-heading p{
+    max-width:780px;
+
+}
+
+.contact .section-content{
+    width:80%;
+    max-width:860px;
+    margin:80px auto;
+    
+}
