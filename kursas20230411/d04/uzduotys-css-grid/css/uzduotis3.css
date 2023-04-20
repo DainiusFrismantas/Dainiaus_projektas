@@ -1,9 +1,9 @@
 .container {
     display:grid;
     grid-template: repeat(3, 50px)/repeat(4, 1fr);
-    grid-template-rows: 150px 150px 150px;
+    grid-template-rows: 125px 250px 125px;
     grid-gap:10px;
-    background-color: #ffeead;
+    background-color:white;
     padding: 10px;
     grid-template-areas:
     "h h h h"
@@ -38,11 +38,31 @@
     grid-area: f;
 }
 
-@media screen and (min-width:650px) {
+
+/* TABLETS ----------- */
+@media screen and (max-width: 700px) and (min-width: 450px){
+    .container {
+        display:grid;
+        grid-template: repeat(4, 50px)/repeat(2, 1fr);
+        grid-template-rows: 50px 300px 75px 50px;
+        grid-template-columns: 100px 300px;
+        grid-gap:10px;
+        background-color: #b0ffad;
+        padding: 10px;
+        grid-template-areas:
+        "h h"
+        "s1 c"
+        "s2 s2"
+        "f f";
+    }
+}
+
+/* PHONE ----------- */
+@media screen and (max-width: 450px) and (min-width: 250px){
     .container {
         display:grid;
         grid-template: repeat(5, 50px)/repeat(1, 1fr);
-        grid-template-rows: 150px 150px 150px;
+        grid-template-rows: 25px 50px 400px 50px 25px;
         grid-gap:10px;
         background-color: #ffeead;
         padding: 10px;
