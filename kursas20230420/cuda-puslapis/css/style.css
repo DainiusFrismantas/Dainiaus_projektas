@@ -177,3 +177,17 @@ section > .container{
     margin:80px auto;
     
 }
+
+.contact .section-content .contact-form .input-row {
+    margin-bottom:30px;
+}
+
+.contact .section-content .contact-form .input-row input {
+    padding:20px 25px;
+    border-radius:5px;
+    border:none;
+    background-color:#273a71;
+    color:white;
+    width:calc(50%-18px);
+
+}
