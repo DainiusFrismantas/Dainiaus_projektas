@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Titillium Web', sans-serif;
+    font-size:16px;
+}
+
+body {
+    margin:0;
+}
+
+.site-header {
+    background-color:#87509c;
+    position:fixed;
+    width:100%;
+    display:block;
+}
+
+.container {
+    max-width:1140px;
+    margin:0 auto;
+    padding:0 20px;
+}
+
+.flex-container {
+    display:flex;
+}
+
+.site-header .container {
+    justify-content: space-between;
+    align-items:center;
+}
+
+.main-nav li {
+    list-style:none;
+}
+
+.main-nav a {
+    color:#fff;
+    font-size:0.7rem;
+    text-transform:uppercase;
+    text-decoration:none;
+    padding:10px 17px;
+    margin:0 5px;
+}
+
+.main-nav a:hover, .main-nav a:active {
+    background-color:#643a79;
+    border-radius:5px;
+}
+
+.mobile-nav {
+    display:none;
+}
+
+.logo {
+    padding:55px 0;
+}
+
+/* HERO */
+.hero {
+    background-color:#87509c;
+    text-align:center;
+    padding-top:100px;
+}
+
+section > .container {
+    padding:120px 0;
+}
+
+.hero h1 {
+    color:white;
+    font-size:1.5rem;
+    line-height:1.1428;
+    max-width:843px;
+    margin:0 auto;
+}
+
+.hero h2 {
+    color:white;
+    font-size:1.625rem;
+    line-height:1.1428;
+    max-width:1000px;
+    margin:0 auto;
+}
+
+
