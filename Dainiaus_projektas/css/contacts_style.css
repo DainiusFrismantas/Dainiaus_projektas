@@ -3,6 +3,11 @@
 *::after {
     box-sizing: border-box;
 }
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 html {
     font-family: 'Titillium Web', sans-serif;
@@ -68,66 +73,54 @@ body {
     padding:55px 0;
 }
 
-/* HERO */
-.hero {
-    background-color:#c0ede5;
-    text-align:center;
-    padding-top:100px;
-}
+/**/
 
-section > .container {
-    padding:120px 0;
-}
-
-.hero h1 {
-    color:white;
-    font-size:1.5rem;
-    line-height:1.1428;
-    max-width:843px;
-    margin:0 auto;
-}
-
-.hero h2 {
-    color:white;
-    font-size:1.625rem;
-    line-height:1.1428;
-    max-width:1000px;
-    margin:0 auto;
-}
-
-/* FOOTER */
-.footer {
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: sans-serif;
+    font-size: 1em;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+  
+  .flex-left {
+    width: 60%;
+    margin: 5px;
+    padding: 5px;
+    border: 3px solid red;
+    display: grid;
+    place-items: center;
+  }
+  
+  .flex-right {
+    width: 40%;
+    margin: 5px;
+    padding: 5px;
+    border: 3px solid green;
+    display: grid;
+    place-items: center;
+  }
+  /* CONTACT */
+.flex-left {
     background-color:#cdb4ef;
-    padding:50px 0;
-}
-
-.footer ul {
-    justify-content: space-around;
-    list-style:none;
-}
-
-.footer ul li a {
-    display:block;
-    padding:5px;
     color:#fff;
-    text-decoration: none;
-    font-size:1.5rem;
-    font-weight:600;
-    letter-spacing: 0.02em;
-}
+    text-align: center;}
 
-.footer ul li a:hover {
-    color:#30bae7;
-}
+.flex-left .contact-form .input-row{
+    padding: 30px 45px;
+    border-radius:5px;
+    border:none;
+    background-color:#c19ff0;}
 
-.footer .copyright-container p{
-    color:white;
-    display:block;
-    text-decoration: none;
-    font-size:1.5rem;
-    font-weight:600;
-    letter-spacing: 0.02em;
-}
-
-
-
+.flex-left .contact-form textarea {
+    border:none;
+    border-radius:5px;
+    width:100%;
+    padding:25px;
+    color:#fff;
+    background-color: #42256a;}
