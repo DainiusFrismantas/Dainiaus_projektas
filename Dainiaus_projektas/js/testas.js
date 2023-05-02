@@ -1,17 +1,16 @@
+/*Funckija, kuri rodo pagrindiniame puslapyje nuotraukas nuo 1 iki 10*/
 let slideIndex = 0;
-        showSlides();
+showSlides();
 
         function showSlides() {
           let i;
           let slides = document.getElementsByClassName("mySlides");
-
-          let dots = document.getElementsByClassName(".");
+          let dots = document.getElementsByClassName("dot");
           for (i = 0; i < slides.length; i++) 
           {
             slides[i].style.display = "none";  
         }
-            
-            slideIndex++;
+          slideIndex++;
           if (slideIndex > slides.length) 
           {
             slideIndex = 1
@@ -24,5 +23,5 @@ let slideIndex = 0;
         
           slides[slideIndex-1].style.display = "block";  
           dots[slideIndex-1].className += "active";
-          setTimeout(showSlides, 2000); // Change image every 2 seconds
+          setTimeout(showSlides, 1000); // Change image every 3 seconds
         }
