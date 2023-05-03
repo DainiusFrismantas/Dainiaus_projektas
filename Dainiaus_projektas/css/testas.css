@@ -7,7 +7,8 @@ body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
 img {
   vertical-align: middle;
-  width:70%;
+  width:500px;
+  height:500px;
 }
 
 /* Slideshow container */
@@ -19,13 +20,15 @@ img {
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
+  color: #ffffff;
+  text-shadow: white;
+  font-size: 2.5rem;
   position: absolute;
-  bottom: 8px;
+  top:5%;
+  right:25%;
   width: 100%;
   text-align: center;
+
 }
 
 /* Number text (1/10 etc) */
