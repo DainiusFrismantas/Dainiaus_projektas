@@ -16,9 +16,7 @@ e8dff5
 #c0ede5 - tekstas puslapyje (žalias)
 */
 
-body {
-    margin:0;
-}
+body {margin:0;}
 
 .site-header {
     background-color:#cdb4ef;
@@ -33,18 +31,14 @@ body {
     padding:0 20px;
 }
 
-.flex-container {
-    display:flex;
-}
+.flex-container {display:flex;}
 
 .site-header .container {
     justify-content: space-between;
     align-items:center;
 }
 
-.main-nav li {
-    list-style:none;
-}
+.main-nav li {list-style:none;}
 
 .main-nav a {
     color:#fff;
@@ -60,13 +54,9 @@ body {
     border-radius:5px;
 }
 
-.mobile-nav {
-    display:none;
-}
+.mobile-nav {display:none;}
 
-.logo {
-    padding:55px 0;
-}
+.logo {padding:55px 0;}
 
 /* HERO */
 .hero {
@@ -75,9 +65,7 @@ body {
     padding-top:100px;
 }
 
-section > .container {
-    padding:120px 0;
-}
+section > .container {padding:120px 0;}
 
 .hero h1 {
     color:white;
@@ -94,8 +82,11 @@ section > .container {
     max-width:1000px;
     margin:0 auto;
 }
+
+
 /* slideshow */
 .mySlides {display: none;}
+
 img {
   vertical-align: middle;
   width:500px;

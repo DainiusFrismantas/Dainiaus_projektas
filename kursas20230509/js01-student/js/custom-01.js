@@ -7,7 +7,12 @@ Visi random generuojami skaičiai turi būti sveikieji.
 Sukurkite 4 kintamuosius, kurie saugotų jūsų vardą, pavardę, gimimo metus ir šiuos metus (nebūtinai tikrus). Parašykite kodą, kuris pagal gimimo metus paskaičiuotų jūsų amžių ir naudodamas vardo ir pavardės kintamuosius atspausdintų tokį sakinį :
 "Aš esu Vardenis Pavardenis. Man yra XX metai(-ų)".
 */
-
+let vardas = 'Dainius'
+let pavarde = 'Frišmantas'
+let gimimo_metai = 1996
+let metai = 2023
+console.log('Dainius')
+console.log(`Aš esu ${vardas} ${pavarde}`)
 
 
 /* 02.
