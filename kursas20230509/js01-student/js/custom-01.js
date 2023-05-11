@@ -10,7 +10,7 @@ Sukurkite 4 kintamuosius, kurie saugotų jūsų vardą, pavardę, gimimo metus i
 let vardas = 'Dainius'
 let pavarde = 'Frišmantas'
 let gimimo_metai = 1996
-let metai = 2023
+let metai = new Date().getFullYear()
 console.log('Dainius')
 console.log(`Aš esu ${vardas} ${pavarde}. Man yra ${metai - gimimo_metai} metai(-ų)`)
 
@@ -63,6 +63,7 @@ Naudokite funkcija Math.random(). Atspausdinkite 3 skaičius nuo -10 iki 10. Ska
 */
 Math.floor(Math.random() * 21) - 10;
 
+TIK IF naudoti
 
 /* 07.
 Įmonė parduoda žvakes po 1 EUR. Perkant daugiau kaip už 1000 EUR taikoma 3 % nuolaida, daugiau kaip už 2000 EUR - 4 % nuolaida. Parašykite programą, kuri skaičiuos žvakių kainą ir atspausdintų atsakymą kiek žvakių ir kokia kaina perkama. Žvakių kiekį generuokite ​Math.random()​ funkcija nuo 5 iki 3000.
