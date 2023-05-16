@@ -1,9 +1,0 @@
-article {
-    border: 2px solid #000;
-    display:flex;
-}
-
-/*
-Flexbox veikia tik ant tiesioginių vaikų
-Flex container - valdo vaikų išdėstymą
-*/
