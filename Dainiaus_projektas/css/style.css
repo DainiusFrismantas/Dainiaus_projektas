@@ -6,7 +6,7 @@
 }
 
 a {
-  color: #c0ede5;
+  color: #498479;
 }
 
 html {
@@ -49,14 +49,16 @@ header {
 
 .site-header li a {
   display: block;
-  padding: 30px 30px;
-  color: #fff;
+  padding: 20px 10px;
+  color: white;
   text-align: center;
   text-decoration: none;
+  font-size:1rem;
+  font-weight:600;
 }
 
 .site-header li a:hover {
-  background-color: #c0ede5;
+  background-color: #498479;
 }
 
 /*Container*/
@@ -64,7 +66,7 @@ header {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
-  color: #c0ede5;
+  color: #498479;
 }
 
 ul.flex-container {
@@ -84,8 +86,8 @@ ul.flex-container {
 .container-connect {
   max-width: 1000px;
   margin: 0px auto;
-  padding: 10px;
-  color: #c0ede5;
+  padding: 00px;
+  color: #498479;;
 }
 
 h1 {
@@ -123,8 +125,8 @@ input, textarea {
 }
 
 button[type="submit"] {
-  padding: 20px;
-  background-color: #c0ede5;
+  padding: 15px;
+  background-color: #498479;
   color: white;
   border: none;
   border-radius: 7px;
@@ -133,7 +135,7 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: white;
-  color: #c0ede5;
+  color: #498479;
 }
 
 #map {
@@ -141,15 +143,9 @@ button[type="submit"]:hover {
   width:100%;
 }
 
-
-
 .slideshow-container img{
-  border-radius: 30%;
-
+  border-radius: 50%;
 }
-
-
-
 
 /*Navigation*/
 .main-nav li {
@@ -238,5 +234,23 @@ img {
     font-size:1rem;
     font-weight:600;}
 
-
-
+    .row {
+      display: flex;
+      padding:10px;
+    }
+    
+    .mySlidesfade {
+      flex: 1;
+      text-align: center;
+      margin: 10px;
+    }
+    
+    .mySlidesfade img {
+      width: 50%;
+      height: 70%;
+      border-radius: 60%;
+    }
+    
+    .mySlidesfade .text {
+      margin-top: 5px;
+    }
