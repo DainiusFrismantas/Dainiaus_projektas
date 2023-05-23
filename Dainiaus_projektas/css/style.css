@@ -85,8 +85,8 @@ ul.flex-container {
 /*Container-connect*/
 .container-connect {
   max-width: 1000px;
-  margin: 0px auto;
-  padding: 00px;
+  margin: 0 auto;
+  padding: 0px;
   color: #498479;;
 }
 
@@ -172,9 +172,9 @@ button[type="submit"]:hover {
 }
 
 
+
 /* HERO */
 .hero {
-  background-image: url(/Dainiaus_projektas/images/NertiGaminiai1.png);
   text-align: center;
   padding-top: 10px;
 }
@@ -204,8 +204,28 @@ button[type="submit"]:hover {
 
 }
 
+
+.hero-main button {
+  padding:10px;
+  margin:20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(233, 224, 224, 0.2);
+  width:20%;
+  height:5%;
+  font-size: 1.5rem;
+  display: inline-block;
+}
+.hero-main button {
+  transition-duration: 0.3s;
+}
+
+.hero-main button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+  
+}
+
 section > .container {
-  padding: 120px 0;
+  padding: 40px 0;
 }
 
 
@@ -293,5 +313,31 @@ img {
   width:100%;
 }
 
+/* Kontaktai-nuotrauka 
 
-/*"Lora", serif
+.container-connect {
+  background-image: url('/Dainiaus_projektas/images/DovanuPakavimas4.png');
+  background-size: cover;
+  background-position: center;
+}
+*/
+
+/*BUY button*/
+.buy button {
+  padding:5px;
+  margin:5px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(233, 224, 224, 0.2);
+  width:20%;
+  height:5%;
+  font-size: 1rem;
+  display: inline-block;
+}
+.buy  button {
+  transition-duration: 0.3s;
+}
+
+.buy  button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+  
+}
