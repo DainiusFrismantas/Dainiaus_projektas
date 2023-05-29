@@ -27,13 +27,13 @@
             <nav class="mobile-nav">
                 <ul id="mMenu" class="flex-container">
                     <li><a href=""><img src="ViolArt.png" alt="ViolArt logotipas"></a></li>
-                    <li><a href="Pagrindinis.html">Pradžia</a></li>
-                    <li><a href="NertiGaminiai.html">Nerti gaminiai</a></li>
-                    <li><a href="Muilas.html">Muilas</a></li>
-                    <li><a href="Hidrolatai.html">Hidrolatai</a></li>
-                    <li><a href="GeliuKompozicijos.html">Gėlės</a></li>
-                    <li><a href="DovanuPakavimas.html">Dovanų pakavimas</a></li>
-                    <li><a href="Kontaktai.html">Kontaktai</a></li>
+                    <li><a href="Pagrindinis.php">Pradžia</a></li>
+                    <li><a href="NertiGaminiai.php">Nerti gaminiai</a></li>
+                    <li><a href="Muilas.php">Muilas</a></li>
+                    <li><a href="Hidrolatai.php">Hidrolatai</a></li>
+                    <li><a href="GeliuKompozicijos.php">Gėlės</a></li>
+                    <li><a href="DovanuPakavimas.php">Dovanų pakavimas</a></li>
+                    <li><a href="Kontaktai.php">Kontaktai</a></li>
                 </ul>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
@@ -43,7 +43,7 @@
     <section class="hero-main">
         <h1>ViolArt - rankų darbo kūriniai, kurie savyje talpina šilumą, energiją ir dvasią, kviečia stabtelti, pajusti, užuosti, nudžiugti ir pasigrožėti...</h1>
 
-        <button><a style="text-decoration: none" href="Kontaktai.html">Susisiekite!</a></button>
+        <button><a style="text-decoration: none" href="Kontaktai.php">Susisiekite!</a></button>
         
 
     </section>

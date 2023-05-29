@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Nerti gaminiai</title>
+    <title>Gėlių kompozicijos</title>
 </head>
 <body>
     <header class="site-header">
@@ -40,43 +40,49 @@
             -->
         </div>
     </header>
-    <section class="hero-nerti">
+    <section class="hero-geles">
         <div class="container">
-            <h2>Stalo padėkliukai, rankinės, pirštinės, kojinės,
-                krepšeliai ir dėžutės.</h2>
-            <h4><br>
-                <b>Nėrimas</b> - malonumas savo rankomis sukurti daiktą, pajusti jo atsiradimo kelią nuo idėjos iki paskutinės kilpelės. 
-                Neriant susikaupia didelė kūrybinė energija ir potencialas, kurį norisi įgalinti. Tai prasminga ir nesudėtinga veikla.</h4>
+            <h2>Gėlių kompozicijos</h2>
+            <h4><b>Gėlės</b> tarsi susikalbėjimas...Kiekvienas gėlės žiedas turi savo reikšmę ir
+                gali perduoti žinią. <b>Gėlė</b> - augalas, turintis estetinę vertę ir puiki
+                dovana, padedanti prabilti ir patvirtinti savo jausmus.
+                Svarbiausia renkantis gėles ar gėlių puokštes - tikslas. Todėl,
+                pirmiausia, būtina įvertinti gėlių gavėją, jo psichologinį paveikslą ir
+                aplinką.</h4>
                 <div class="row">
 
                     <div class="mySlidesfade">
-                        <img src="images/NertiGaminiai1.png">
-                        <div class="price">25 €</div>
+                        <img src="images/GeliuKompozicijos3.png">
+                        <div class="price">15-40 €</div>
                         <div class="buy"><button>Į krepšelį</button></div>
                         </div>
                     <div class="mySlidesfade">
-                        <img src="images/NertiGaminiai2.png">
-                        <div class="price">25 €</div>
+                        <img src="images/GeliuKompozicijos4.png">
+                        <div class="price">15-40 €</div>
                         <div class="buy"><button>Į krepšelį</button></div>
                         </div>
                     </div>
-            
-            <div> 
-                <h4><b>Nerti vąšeliu</b> - malonumas, aistra, savotiška meditacija ir geriausi vaistai nuo blogos nuotaikos.Tai paspirtis ir poilsis, kuris derinasi ir su nauda...</h4>
-            </div>
+                    <div> 
+                        <h4><b>Gėlė</b> ne tik puiki dovana gimtadienio, vestuvių ar kitos šventės
+                            proga, bet ir gali papuošti namų, parduotuvės ar renginio interjerą.
+                            Kuriant gyvų gėlių puokštes, dirtinių gėlių kompozicijas ar renginio
+                            floristiką tenka įvertinti daug dalykų ir atsakyti į klausimus kam, kodėl,
+                            kur ir nuo ko bus skirta gėlių kompozicija...</h4>
+                    </div>
                     <div class="row">
-            
                       <div class="mySlidesfade">
-                          <img src="images/NertiGaminiai3.png">
-                          <div class="price">50 €</div>
-                          <div class="buy"><button>Į krepšelį</button></div>
+                        <img src="images/GeliuKompozicijos1.png">
+                        <div class="price">15-40 €</div>
+                        <div class="buy"><button>Į krepšelį</button></div>
                       </div>
                       <div class="mySlidesfade">
-                          <img src="images/NertiGaminiai4.png">
-                          <div class="price">25 €</div>
+                          <img src="images/GeliuKompozicijos2.png">
+                          <div class="price">15-40 €</div>
                           <div class="buy"><button>Į krepšelį</button></div>
-                      </div> 
+                      </div>
                     </div>
+            
+                
         </div>
     </section>
     <footer class="footer">
