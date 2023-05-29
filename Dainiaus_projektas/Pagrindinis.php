@@ -15,13 +15,13 @@
             <nav class="main-nav">
                 <ul class="flex-container">
                     <li><a href=""><img src="ViolArt.png" alt="ViolArt logotipas"></a></li>
-                    <li><a href="Pagrindinis.html">Pradžia</a></li>
-                    <li><a href="NertiGaminiai.html">Nerti gaminiai</a></li>
-                    <li><a href="Muilas.html">Muilas</a></li>
-                    <li><a href="Hidrolatai.html">Hidrolatai</a></li>
-                    <li><a href="GeliuKompozicijos.html">Gėlės</a></li>
-                    <li><a href="DovanuPakavimas.html">Dovanų pakavimas</a></li>
-                    <li><a href="Kontaktai.html">Kontaktai</a></li>
+                    <li><a href="Pagrindinis.php">Pradžia</a></li>
+                    <li><a href="NertiGaminiai.php">Nerti gaminiai</a></li>
+                    <li><a href="Muilas.php">Muilas</a></li>
+                    <li><a href="Hidrolatai.php">Hidrolatai</a></li>
+                    <li><a href="GeliuKompozicijos.php">Gėlės</a></li>
+                    <li><a href="DovanuPakavimas.php">Dovanų pakavimas</a></li>
+                    <li><a href="Kontaktai.php">Kontaktai</a></li>
                 </ul>
             </nav>
             <nav class="mobile-nav">
@@ -35,9 +35,7 @@
                     <li><a href="DovanuPakavimas.php">Dovanų pakavimas</a></li>
                     <li><a href="Kontaktai.php">Kontaktai</a></li>
                 </ul>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
             </nav>
     </header>
     <section class="hero-main">
@@ -51,7 +49,7 @@
         <div class="container">
             <nav class="footer-copyright">
                 <ul class="flex-container">
-                    &copy;2023 Violeta Pociuvienė || Visos teisės saugomos. Kopijuoti, platinti svetainės turinį be autorių sutikimo draudžiama.
+                    &copy;<?php echo date('Y'); ?> Violeta Pociuvienė || Visos teisės saugomos. Kopijuoti, platinti svetainės turinį be autorių sutikimo draudžiama.
                 </ul>
             </nav>
         </div>

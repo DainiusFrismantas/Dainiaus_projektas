@@ -84,7 +84,7 @@ ul.flex-container {
 
 /*Container-connect*/
 .container-connect {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0px;
   color: #498479;;
@@ -118,18 +118,19 @@ label {
 }
 
 input, textarea {
-  padding: 20px;
-  margin-bottom: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 7px;
 }
 
 button[type="submit"] {
-  padding: 15px;
+  padding: 10px 20px;
   background-color: #498479;
-  color: white;
+  color: #fff;
   border: none;
-  border-radius: 7px;
+  border-radius: 5px;
+  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -139,7 +140,7 @@ button[type="submit"]:hover {
 }
 
 #map {
-  height:450px;
+  height:420px;
   width:100%;
 }
 
@@ -204,15 +205,15 @@ button[type="submit"]:hover {
 
 }
 
-
+/*Pagrindis mygtukas*/
 .hero-main button {
   padding:10px;
-  margin:20px;
+  margin:15px;
   border-radius: 10px;
-  box-shadow: 0 8px 16px 0 rgba(233, 224, 224, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(169, 166, 166, 0.2);
   width:20%;
   height:5%;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   display: inline-block;
 }
 .hero-main button {
@@ -313,15 +314,6 @@ img {
   width:100%;
 }
 
-/* Kontaktai-nuotrauka 
-
-.container-connect {
-  background-image: url('/Dainiaus_projektas/images/DovanuPakavimas4.png');
-  background-size: cover;
-  background-position: center;
-}
-*/
-
 /*BUY button*/
 .buy button {
   padding:5px;
@@ -344,23 +336,33 @@ img {
 
 
 
-
+/*Teksto esančio kiekviename puslapyje h2 ir h4 CSS kodas*/
 
 h2 {
   border: 2px solid hsl(163, 50%, 50%); /* Spalva ir stilius apvado linijoms */
-  padding: 10px; /* Atstumas tarp teksto ir apvado linijų */
+  padding: 5px; /* Atstumas tarp teksto ir apvado linijų */
   border-radius: 10px; /* Skritulinio apvado išlenkimas */
   background-color: #f0f0f0; /* Fono spalva */
   text-align: center; /* Teksto centrinis lygiavimas */
 }
-        h4 {
+
+h3 {
+  border: 1.5px solid hsl(163, 50%, 50%); /* Spalva ir stilius apvado linijoms */
+  padding: 0px; /* Atstumas tarp teksto ir apvado linijų */
+  border-radius: 5px; /* Skritulinio apvado išlenkimas */
+  background-color: #f0f0f0; /* Fono spalva */
+  text-align: center; /* Teksto centrinis lygiavimas */
+}
+
+  h4 {
   border-bottom: 1px solid hsl(163, 50%, 50%); /* Apvado linija po h4 teksto */
-  padding-bottom: 10px; /* Atstumas tarp teksto ir apvado linijos */
-  margin-bottom: 20px; /* Atstumas tarp h4 elemento ir kito turinio */
+  padding-bottom: 5px; /* Atstumas tarp teksto ir apvado linijos */
+  margin-bottom: 10px; /* Atstumas tarp h4 elemento ir kito turinio */
 }
 
 
 
+/*Prekių krepšeliui*/
 
 #cartItemsContainer {
   display: none;
@@ -370,10 +372,10 @@ h2 {
   position: fixed;
   top: 10px;
   right: 10px;
-  background-color: #333;
+  background-color: #e8e5e5;
   color: #fff;
   padding: 5px 10px;
-  border-radius: 50%;
+  border-radius: 30%;
   cursor: pointer;
 }
 
@@ -390,8 +392,8 @@ h2 {
 }
 
 .cart-item img {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   margin-right: 5px;
 }
 
@@ -409,4 +411,37 @@ h2 {
   color: red;
   font-size: 14px;
   cursor: pointer;
+}
+
+
+.cart-items .container h2 {
+  margin-bottom: 10px;
+}
+.cart-items .container .message-box {
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: none;
+}
+
+/*Message-box*/
+
+.message-box {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #f8f8f8;
+  color: #333;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.message-box.show {
+  opacity: 1;
 }

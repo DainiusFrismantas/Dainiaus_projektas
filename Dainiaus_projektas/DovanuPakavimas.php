@@ -12,13 +12,13 @@
             <nav class="main-nav">
                 <ul class="flex-container">
                     <li><a href="ViolArt.png"><img src="ViolArt.png" alt="ViolArt logotipas"></a></li>
-                    <li><a href="Pagrindinis.html">Pradžia</a></li>
-                    <li><a href="NertiGaminiai.html">Nerti gaminiai</a></li>
-                    <li><a href="Muilas.html">Muilas</a></li>
-                    <li><a href="Hidrolatai.html">Hidrolatai</a></li>
-                    <li><a href="GeliuKompozicijos.html">Gėlių kompozicijos</a></li>
-                    <li><a href="DovanuPakavimas.html">Dovanų pakavimas</a></li>
-                    <li><a href="Kontaktai.html">Kontaktai</a></li>
+                    <li><a href="Pagrindinis.php">Pradžia</a></li>
+                    <li><a href="NertiGaminiai.php">Nerti gaminiai</a></li>
+                    <li><a href="Muilas.php">Muilas</a></li>
+                    <li><a href="Hidrolatai.php">Hidrolatai</a></li>
+                    <li><a href="GeliuKompozicijos.php">Gėlių kompozicijos</a></li>
+                    <li><a href="DovanuPakavimas.php">Dovanų pakavimas</a></li>
+                    <li><a href="Kontaktai.php">Kontaktai</a></li>
                 </ul>
             </nav>
             <!--
