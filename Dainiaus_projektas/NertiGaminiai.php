@@ -73,7 +73,7 @@
     </div>
 </section>
     <footer class="footer">
-        <p>&copy;<?php echo date('Y'); ?>Violeta Pociuvienė || Visos teisės saugomos. Kopijuoti, platinti svetainės turinį be autorių sutikimo draudžiama.</p>
+        <p>&copy;<?php echo date('Y'); ?> Violeta Pociuvienė || Visos teisės saugomos. Kopijuoti, platinti svetainės turinį be autorių sutikimo draudžiama.</p>
     </footer>
     <script>
         let cartItems = [];
