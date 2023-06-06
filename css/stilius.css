@@ -160,7 +160,6 @@ header {
   .hero-main {
     opacity: 0.8;
     text-align: center;
- 
     height: auto; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-size: cover; /* Resize the background image to cover the entire container */
@@ -254,25 +253,6 @@ header {
 
 
 
-  /*Pagrindis mygtukas*/
-  .hero-main button {
-    padding:10px;
-    margin:15px;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px 0 rgba(169, 166, 166, 0.2);
-    width:20%;
-    height:5%;
-    font-size: 1.75rem;
-    display: inline-block;
-  }
-  .hero-main button {
-    transition-duration: 0.3s;
-  }
-  
-  .hero-main button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
-    
-  }
   
   section > .container {
     padding: 40px 0;
@@ -498,7 +478,7 @@ h2 {
     text-align: center; /* Teksto centrinis lygiavimas */
   }
   
-   h3 {
+h3 {
     border: 1.5px solid hsl(163, 50%, 50%); /* Spalva ir stilius apvado linijoms */
     padding: 0px; /* Atstumas tarp teksto ir apvado linijų */
     border-radius: 5px; /* Skritulinio apvado išlenkimas */
@@ -506,7 +486,7 @@ h2 {
     text-align: center; /* Teksto centrinis lygiavimas */
   }
   
-   h4 {
+h4 {
     border-bottom: 1px solid hsl(163, 50%, 50%); /* Apvado linija po h4 teksto */
     padding-bottom: 5px; /* Atstumas tarp teksto ir apvado linijos */
     margin-bottom: 10px; /* Atstumas tarp h4 elemento ir kito turinio */

@@ -8,15 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/stilius.css">
+    <link rel="stylesheet" href="https://unpkg.com/sweetalert/dist/sweetalert.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
     <script src="js/map.js" defer></script>
-    <script src="js/contact.js" defer></script>
+    
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" defer></script> 
     <title>ViolArt</title>
-    <style>
-   
-    
-    </style>
+<style>
+
+</style>
 </head>
 <body>
     <header class="site-header">
@@ -29,6 +29,7 @@
                     <li><a href="Hidrolatai.php">Hidrolatai</a></li>
                     <li><a href="GeliuKompozicijos.php">Gėlės</a></li>
                     <li><a href="DovanuPakavimas.php">Dovanų pakavimas</a></li>
+                    <li><a href="Kontaktai.php">Kontaktai</a></li>
                 </ul>
             </nav>
             <nav class="mobile-nav">
@@ -45,14 +46,9 @@
             </nav>
     </header>
     <section class="hero-main">
-        <div class="background-image">
+    <div class="background-image">
         <img src="pagrindine.jpg" alt="Pagrindinė nuotrauka">
-        </div>
-        <div class="hero-content">
-        <h1>ViolArt - rankų darbo kūriniai, kurie savyje talpina šilumą, energiją ir dvasią, kviečia stabtelti, pajusti, užuosti, nudžiugti ir pasigrožėti...</h1>
-        <button><a style="text-decoration: none; color: white;" href="container-connect">Susisiekite!</a></button>
-    </section>
-    <div class="container-connect" style="height: 100vh; overflow: scroll;">
+        <div class="container-connect" style="height: 100vh; overflow: scroll;">
         <h2>Susisiekite!</h2>
         <div class="row">
             <div class="column contact-column">
@@ -79,6 +75,11 @@
         </div>
     </div>
     </div>
+    <div class="hero-content">
+        <h1>ViolArt - rankų darbo kūriniai, kurie savyje talpina šilumą, energiją ir dvasią, kviečia stabtelti, pajusti, užuosti, nudžiugti ir pasigrožėti...</h1>
+        <!--<button><a style="text-decoration: none; color: white;" href="container-connect">Susisiekite!</a></button>-->
+    </div> 
+</section>
     <footer class="footer">
             <div class="container">
                 <nav class="footer-copyright">
@@ -88,6 +89,6 @@
                 </nav>
             </div>
         </footer>
-
+        <script src="js/contact.js"></script>
     </body>
 </html>
