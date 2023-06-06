@@ -1,0 +1,513 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #498479;
+}
+
+html {
+  font-family: 'Lora', serif;
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+/*Header*/
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #554172;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: block;
+  }
+  
+  .site-header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #554172;
+    width: 100%;
+    display: block;
+  }
+  
+  .site-header li {
+    float: left;
+    padding:0px;
+  }
+  
+  .site-header li a {
+    display: block;
+    padding: 20px 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size:1rem;
+    font-weight:600;
+  }
+  
+  .site-header li a:hover {
+    background-color: #498479;
+  }
+
+ /*Container*/
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+    color: #498479;
+  }
+  
+  ul.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+  }
+  
+  .flex-container img{
+    border-radius: 70%;
+    width:70px; 
+    height:70px;
+  }
+  /*Tekstas h1*/ 
+  h1 {
+    padding: 10px;
+  }
+  /*Tekstas h2*/ 
+  h2 {
+    text-align: center;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 1;
+    margin-right: 5px;
+  }
+ /*Kontaktų forma*/  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  /*Kontaktų*/ 
+  input, textarea {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #498479;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: white;
+    color: #498479;
+  }
+  /*Kontaktų žemėlapis*/ 
+  #map {
+    height:420px;
+    width:100%;
+  }
+
+  /*Container-connect*/
+  .container-connect {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+    color: #498479;;
+  }
+  
+/*Navigation*/
+.main-nav li {
+    list-style: none;
+  }
+  
+  .main-nav a {
+    color: #fff;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 17px;
+    margin: 0 5px;
+  }
+  
+  .main-nav a:hover,
+  .main-nav a:active {
+    background-color: #554172;
+    border-radius: 5px;
+  }
+  
+  .mobile-nav {
+    display: none;
+  }
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+  .hero-main {
+    background-image: url(/images/DovanuPakavimas2.png);
+    opacity: 0.8;
+    text-align: center;
+    padding-top: 5px;
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 900px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+  
+  .hero-main h1 {
+    color: white;
+    padding-bottom: 10px;
+    font-size: 2rem;
+    line-height: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    left: 100px;
+    top: 0px;
+  
+  }
+  
+  /*Pagrindis mygtukas*/
+  .hero-main button {
+    padding:10px;
+    margin:15px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(169, 166, 166, 0.2);
+    width:20%;
+    height:5%;
+    font-size: 1.75rem;
+    display: inline-block;
+  }
+  .hero-main button {
+    transition-duration: 0.3s;
+  }
+  
+  .hero-main button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+    
+  }
+  
+  section > .container {
+    padding: 40px 0;
+  }
+  
+  
+  .hero h1 {
+    color: #498479;
+    padding-bottom: 5px;
+    font-size: 2rem;
+    line-height: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .hero h2 {
+    color: #498479;
+    padding-bottom: 5px;
+    font-size: 1.6rem;
+    line-height: 1;
+    max-width: 843px;
+    margin: 0 auto;
+  }
+  
+  .hero h4 {
+    color: #909191;
+    font-size: 1.2rem;
+    line-height: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+  } 
+   /*Prekių nuotraukos*/
+  img {
+    vertical-align: middle;
+    width: 400px;
+    height: 400px;
+  }
+
+
+
+  /* Images */
+.container .footer-copyright .flex-container{
+    color:white;
+    display:block;
+    text-decoration: none;
+    font-size:1rem;
+    font-weight:600;}
+  
+    .row {
+      display: flex;
+      padding:5px;
+    }
+    
+    .mySlidesfade {
+      flex: 1;
+      text-align: center;
+      margin: 25px;
+      padding-right:50px;
+    }
+    
+    .mySlidesfade img {
+      width: 70%;
+      height: 70%;
+      border-radius:10%;
+    }
+    
+    .mySlidesfade .text {
+      margin-top: 10px;
+    }
+  
+/*Krepšelis-Cart*/
+.cart-icon svg {
+    width: 30px;
+    height: 30px;
+    fill: #333;
+}
+
+.cart-icon .notification {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.cart-container {
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 9999;
+}
+
+.cart-container h3 {
+    margin-top: 0;
+}
+
+.cart-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-container ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-container ul li span,
+.cart-container ul li button {
+    background-color: #ccc;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.cart-container ul li span:hover,
+.cart-container ul li button:hover {
+    background-color: #999;
+    color: #fff;
+}
+
+.cart-container .total {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.cart-container button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.cart-container button:hover {
+    background-color: #666;
+}
+
+.cart-container button.back {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    padding: 0;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.spacer {
+height: 10px; /* Pasirinkite tinkamą aukštį */
+}
+
+.site-header {
+position: relative;
+}
+
+.cart-icon {
+position: fixed;
+top: 115px; /* Pasirinkite tinkamą aukštį */
+right: 10px; /* Pasirinkite tinkamą atstumą nuo dešinės krašto */
+background-color: transparent;
+border: none;
+cursor: pointer;
+z-index: 999;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Apvado stilius */
+}
+.cart-icon svg {
+fill: #691b1b; /* Pasirinkite norimą ikonos spalvą */
+}
+
+.cart-icon .notification {
+background-color: #498479; /* Pasirinkite norimą pranešimo fono spalvą */
+color: #e3eae9; /* Pasirinkite norimą pranešimo teksto spalvą */
+}
+
+.buy button {
+background-color: #498479; /* Pasirinkite norimą mygtuko fono spalvą */
+color: #FFFFFF; /* Pasirinkite norimą mygtuko teksto spalvą */
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+width: fit-content;
+white-space: nowrap;
+transition: background-color 0.3s ease;
+}
+
+.buy button:hover {
+background-color: #2c514a; /* Pasirinkite norimą mygtuko fono spalvą paryškinimui */
+}
+
+.buy .button-text {
+margin-left: 50px;
+}
+
+
+
+/*Teksto esančio kiekviename puslapyje h2 ir h4 CSS kodas*/
+
+h2 {
+    border: 2px solid hsl(163, 50%, 50%); /* Spalva ir stilius apvado linijoms */
+    padding: 5px; /* Atstumas tarp teksto ir apvado linijų */
+    border-radius: 10px; /* Skritulinio apvado išlenkimas */
+    background-color: #f0f0f0; /* Fono spalva */
+    text-align: center; /* Teksto centrinis lygiavimas */
+  }
+  
+   h3 {
+    border: 1.5px solid hsl(163, 50%, 50%); /* Spalva ir stilius apvado linijoms */
+    padding: 0px; /* Atstumas tarp teksto ir apvado linijų */
+    border-radius: 5px; /* Skritulinio apvado išlenkimas */
+    background-color: #f0f0f0; /* Fono spalva */
+    text-align: center; /* Teksto centrinis lygiavimas */
+  }
+  
+   h4 {
+    border-bottom: 1px solid hsl(163, 50%, 50%); /* Apvado linija po h4 teksto */
+    padding-bottom: 5px; /* Atstumas tarp teksto ir apvado linijos */
+    margin-bottom: 10px; /* Atstumas tarp h4 elemento ir kito turinio */
+  }
+
+/* FOOTER */
+
+.footer {
+    background-color: #554172;
+    padding: 5px 0;
+    text-align: center;
+    color: #fff;
+    justify-content: center;
+    display: block;
+    position:fixed; 
+    bottom: 0; 
+    width:100%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+      font-size: 11px;
+    }
+  }

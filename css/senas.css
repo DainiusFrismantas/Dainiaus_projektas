@@ -143,7 +143,7 @@ button[type="submit"]:hover {
   height:420px;
   width:100%;
 }
-
+/*Nebereikia*/
 .slideshow-container img{
   border-radius: 50%;
 }
@@ -314,31 +314,10 @@ img {
   width:100%;
 }
 
-/*BUY button*/
-.buy button {
-  padding:5px;
-  margin:5px;
-  border-radius: 10px;
-  box-shadow: 0 8px 16px 0 rgba(233, 224, 224, 0.2);
-  width:20%;
-  height:5%;
-  font-size: 1rem;
-  display: inline-block;
-}
-.buy  button {
-  transition-duration: 0.3s;
-}
-
-.buy  button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
-  
-}
-
-
 
 /*Teksto esančio kiekviename puslapyje h2 ir h4 CSS kodas*/
 
-h2 {
+ h2 {
   border: 2px solid hsl(163, 50%, 50%); /* Spalva ir stilius apvado linijoms */
   padding: 5px; /* Atstumas tarp teksto ir apvado linijų */
   border-radius: 10px; /* Skritulinio apvado išlenkimas */
@@ -346,7 +325,7 @@ h2 {
   text-align: center; /* Teksto centrinis lygiavimas */
 }
 
-h3 {
+ h3 {
   border: 1.5px solid hsl(163, 50%, 50%); /* Spalva ir stilius apvado linijoms */
   padding: 0px; /* Atstumas tarp teksto ir apvado linijų */
   border-radius: 5px; /* Skritulinio apvado išlenkimas */
@@ -354,7 +333,7 @@ h3 {
   text-align: center; /* Teksto centrinis lygiavimas */
 }
 
-  h4 {
+ h4 {
   border-bottom: 1px solid hsl(163, 50%, 50%); /* Apvado linija po h4 teksto */
   padding-bottom: 5px; /* Atstumas tarp teksto ir apvado linijos */
   margin-bottom: 10px; /* Atstumas tarp h4 elemento ir kito turinio */
@@ -364,84 +343,144 @@ h3 {
 
 /*Prekių krepšeliui*/
 
-#cartItemsContainer {
-  display: none;
+.cart-icon svg {
+    width: 30px;
+    height: 30px;
+    fill: #333;
+}
+
+.cart-icon .notification {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.cart-container {
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 9999;
+}
+
+.cart-container h3 {
+    margin-top: 0;
+}
+
+.cart-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-container ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-container ul li span,
+.cart-container ul li button {
+    background-color: #ccc;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.cart-container ul li span:hover,
+.cart-container ul li button:hover {
+    background-color: #999;
+    color: #fff;
+}
+
+.cart-container .total {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.cart-container button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.cart-container button:hover {
+    background-color: #666;
+}
+
+.cart-container button.back {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    padding: 0;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.spacer {
+height: 10px; /* Pasirinkite tinkamą aukštį */
+}
+
+.site-header {
+position: relative;
 }
 
 .cart-icon {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  background-color: #e8e5e5;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 30%;
-  cursor: pointer;
+position: fixed;
+top: 115px; /* Pasirinkite tinkamą aukštį */
+right: 10px; /* Pasirinkite tinkamą atstumą nuo dešinės krašto */
+background-color: transparent;
+border: none;
+cursor: pointer;
+z-index: 999;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Apvado stilius */
+}
+.cart-icon svg {
+fill: #691b1b; /* Pasirinkite norimą ikonos spalvą */
 }
 
-.cart-count {
-  font-weight: bold;
-  font-size: 14px;
-  margin-right: 5px;
+.cart-icon .notification {
+background-color: #498479; /* Pasirinkite norimą pranešimo fono spalvą */
+color: #e3eae9; /* Pasirinkite norimą pranešimo teksto spalvą */
 }
 
-.cart-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+.buy button {
+background-color: #498479; /* Pasirinkite norimą mygtuko fono spalvą */
+color: #FFFFFF; /* Pasirinkite norimą mygtuko teksto spalvą */
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+width: fit-content;
+white-space: nowrap;
+transition: background-color 0.3s ease;
 }
 
-.cart-item img {
-  width: 50px;
-  height: 50px;
-  margin-right: 5px;
+.buy button:hover {
+background-color: #2c514a; /* Pasirinkite norimą mygtuko fono spalvą paryškinimui */
 }
 
-.cart-item-info {
-  display: flex;
-  align-items: center;
-}
-
-.cart-item-quantity {
-  margin-left: 10px;
-  margin-right: 5px;
-}
-
-.cart-item-delete {
-  color: red;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-
-.cart-items .container h2 {
-  margin-bottom: 10px;
-}
-.cart-items .container .message-box {
-  border: 1px solid #ccc;
-  background-color: #f2f2f2;
-  padding: 10px;
-  margin-bottom: 10px;
-  display: none;
-}
-
-/*Message-box*/
-
-.message-box {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background-color: #f8f8f8;
-  color: #333;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 10px 20px;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.message-box.show {
-  opacity: 1;
+.buy .button-text {
+margin-left: 50px;
 }
