@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <!--CSS -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/stilius.css">
@@ -19,14 +21,13 @@
     <header class="site-header">
         <nav class="main-nav">
             <ul class="flex-container">
-                <li><a href="ViolArt.png"><img src="ViolArt.png" alt="ViolArt logotipas"></a></li>
+                <li><a href=""><img src="ViolArt.png" alt="ViolArt logotipas"></a></li>
                 <li><a href="Pagrindinis.php">Pradžia</a></li>
                 <li><a href="NertiGaminiai.php">Nerti gaminiai</a></li>
                 <li><a href="Muilas.php">Muilas</a></li>
                 <li><a href="Hidrolatai.php">Hidrolatai</a></li>
                 <li><a href="GeliuKompozicijos.php">Gėlių kompozicijos</a></li>
                 <li><a href="DovanuPakavimas.php">Dovanų pakavimas</a></li>
-                <li><a href="Kontaktai.php">Kontaktai</a></li>
             </ul>
         </nav>
     </header>

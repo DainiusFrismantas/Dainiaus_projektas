@@ -12,10 +12,12 @@ a {
 html {
   font-family: 'Lora', serif;
   font-size: 16px;
+  background-color: #f2f2f2;
 }
 
 body {
-  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  font-family: 'Lora', serif;
   font-size: 16px;
   line-height: 1.6;
   margin: 0;
@@ -24,14 +26,14 @@ body {
 
 /*Header*/
 header {
-    display: flex;
+   display: block;
     justify-content: center;
     background-color: #554172;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
-    display: block;
+    
   }
   
   .site-header ul {
@@ -51,7 +53,7 @@ header {
   
   .site-header li a {
     display: block;
-    padding: 20px 10px;
+    padding: 10px 10px;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -59,9 +61,6 @@ header {
     font-weight:600;
   }
   
-  .site-header li a:hover {
-    background-color: #498479;
-  }
 
  /*Container*/
 .container {
@@ -75,24 +74,25 @@ header {
     display: flex;
     justify-content: space-between;
     align-items:center;
+    
   }
   
   .flex-container img{
-    border-radius: 70%;
+    border-radius: 10%;
     width:70px; 
     height:70px;
+    
   }
   /*Tekstas h1*/ 
   h1 {
     padding: 10px;
+    color: #333;
+        font-size: 28px;
+        font-weight: 600;
   }
   /*Tekstas h2*/ 
   h2 {
     text-align: center;
-  }
-  
-  .row {
-    display: flex;
   }
   
   .column {
@@ -140,30 +140,12 @@ header {
   /*Container-connect*/
   .container-connect {
     max-width: 1200px;
+    max-height: auto;
     margin: 0 auto;
-    padding: 0px;
-    color: #498479;;
+    padding: 0;
+    color: #498479;
   }
   
-/*Navigation*/
-.main-nav li {
-    list-style: none;
-  }
-  
-  .main-nav a {
-    color: #fff;
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 10px 17px;
-    margin: 0 5px;
-  }
-  
-  .main-nav a:hover,
-  .main-nav a:active {
-    background-color: #554172;
-    border-radius: 5px;
-  }
   
   .mobile-nav {
     display: none;
@@ -176,19 +158,17 @@ header {
   }
   
   .hero-main {
-    background-image: url(/images/DovanuPakavimas2.png);
     opacity: 0.8;
     text-align: center;
-    padding-top: 5px;
-    background-color: #cccccc; /* Used if the image is unavailable */
-    height: 900px; /* You must set a specified height */
+ 
+    height: auto; /* You must set a specified height */
     background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1); /* Pridėtas box-shadow */
   }
+
   
   .hero-main h1 {
-    color: white;
     padding-bottom: 10px;
     font-size: 2rem;
     line-height: 1;
@@ -200,6 +180,80 @@ header {
   
   }
   
+  /*Pagrindinio puslapio nuotrauka, hero-main, hero-content, img*/
+  .background-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-content h1 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content button {
+  background-color: #498479;
+  color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+ /*NAVIGATION NAUJAS*/
+.main-nav {
+  background-color: #fff;
+  padding: 0px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-nav li {
+  margin-right: 20px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.main-nav a:hover {
+  color: #ff9900;
+}
+
+.main-nav .active {
+  color: #ff9900;
+}
+
+
+
+
+
+
+
+
+
+
   /*Pagrindis mygtukas*/
   .hero-main button {
     padding:10px;
@@ -396,7 +450,7 @@ position: relative;
 
 .cart-icon {
 position: fixed;
-top: 115px; /* Pasirinkite tinkamą aukštį */
+top: 100px; /* Pasirinkite tinkamą aukštį */
 right: 10px; /* Pasirinkite tinkamą atstumą nuo dešinės krašto */
 background-color: transparent;
 border: none;
@@ -461,16 +515,17 @@ h2 {
 /* FOOTER */
 
 .footer {
-    background-color: #554172;
-    padding: 5px 0;
-    text-align: center;
-    color: #fff;
-    justify-content: center;
-    display: block;
-    position:fixed; 
-    bottom: 0; 
-    width:100%;
-  }
+  background-color: #554172;
+  padding: 5px 0;
+  text-align: center;
+  color: #fff;
+  justify-content: center;
+  display: block;
+  position: fixed; 
+  bottom: 0; 
+  width: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1); /* Pridėtas box-shadow */
+}
 
 
 
@@ -501,13 +556,10 @@ h2 {
 
 
 
-
-
-
-
-/* On smaller screens, decrease text size */
+/* On smaller screens, decrease text size 
 @media only screen and (max-width: 300px) {
     .text {
       font-size: 11px;
     }
-  }
+
+*/

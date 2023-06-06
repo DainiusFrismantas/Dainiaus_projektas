@@ -30,16 +30,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // Susisiekimo forma
     var form = document.getElementById("contact-form");
   
-    form.addEventListener("submit", function(event) {
-      event.preventDefault();
-      var name = document.getElementById("name").value;
-      var surname = document.getElementById("surname").value;
-      var email = document.getElementById("email").value;
-      var message = document.getElementById("message").value;
-      alert("Ačiū, " + name + " " + surname + "!\n\nEmail: " + email + "\n\nMessage: " + message);
-      form.reset();
-    });
-  
+   
   });
   
   
