@@ -1,8 +1,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 a {
@@ -19,7 +17,7 @@ body {
   background-color: #f2f2f2;
   font-family: 'Lora', serif;
   font-size: 16px;
-  line-height: 1.6;
+
   margin: 0;
 }
 
@@ -57,3 +55,4 @@ h2 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+ 

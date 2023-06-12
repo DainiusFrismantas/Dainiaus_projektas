@@ -21,3 +21,16 @@
   .container-connect {
     position: relative;
   }
+
+         /* Spalvų taisyklės */
+         .main-nav a {
+          color: rgb(114, 56, 56); /* Numatytasis teksto spalvos stilius */
+      }
+
+      .main-nav a:hover {
+          color: red; /* Teksto spalva, kai pele užvedama ant nuorodos */
+      }
+
+      .main-nav .active {
+          color: blue; /* Teksto spalva aktyviam skirtukui */
+      }
