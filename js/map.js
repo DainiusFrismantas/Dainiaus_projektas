@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
     // Žemėlapis
-    var mymap = L.map('map').setView([56.2, 22.35], 13);
+    var mymap = L.map('map').setView([56.1, 21.35], 12);
   
      // Kartografinių pagrindų sluoksnių sąrašas
      var baseLayers = {
@@ -29,8 +29,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
     L.control.layers(baseLayers).addTo(mymap);
     // Susisiekimo forma
     var form = document.getElementById("contact-form");
-  
-   
   });
-  
   

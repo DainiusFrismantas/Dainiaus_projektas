@@ -1,0 +1,23 @@
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+    color: #498479;
+  }
+  
+  ul.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .flex-container img {
+    border-radius: 10%;
+    width: 70px;
+    height: 70px;
+  }
+
+  .container-connect {
+    position: relative;
+  }

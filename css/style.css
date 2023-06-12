@@ -1,0 +1,59 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #498479;
+}
+
+html {
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  background-color: #f2f2f2;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Tekstas h1 */
+h1 {
+  padding: 10px;
+  color: #333;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Tekstas h2 */
+h2 {
+  text-align: center;
+  color: #498479;
+}
+
+.column {
+  flex: 1;
+  margin-right: 5px;
+}
+
+.hero-content {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+  text-align: center;
+  width: 70%;
+  max-width: 1000px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
