@@ -1,3 +1,6 @@
+<?php
+    require __DIR__ . '/../app/src/app.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,9 +9,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="/../app/css/normalize.css">
  
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href='/../app/css/style.css'>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" defer></script>
  <!-- SweetAlert CSS -->
@@ -16,11 +19,9 @@
 <!-- SweetAlert JS -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.js" defer></script>
 <!-- Krepšelio JS -->
-<script src="js/contact.js" defer></script>
+<script src="/../app/js/contact.js" defer></script>
 <script src="https://kit.fontawesome.com/adaa5eca50.js" defer></script>
-<script src="js/toggleMobileNav.js" defer></script>
-
-
+<script src="/../app/js/toggleMobileNav.js" defer></script>
   <title>ViolArt</title>
   <style>
 /* Header */
@@ -79,7 +80,7 @@ header {
 
     /*Pagrindinė background nuotrauka pagrindiniame puslapyje */
     .hero-main {
-      background-image: url('images/pagrindine.jpg');
+      background-image: url('app/images/pagrindine.jpg');
       background-position: center;
       background-size: cover;
       width: 100%;
@@ -247,73 +248,16 @@ header {
     }
   }
   </style>
-
-  <script>
- 
-</script>
-
-
 </head>
 
 <body>
-  <header class="site-header">
-    <nav class="main-nav">
-      <ul class="flex-container">
-        <li><a href=""><img src="ViolArt.png" alt="ViolArt logotipas"></a></li>
-        <li class="menu-toggle"><a href="javascript:void(0);" class="icon" onclick="toggleMobileNav()"><i class="fa fa-bars"></i></a></li>
-        <li class="menu-item"><a href="Pagrindinis.php">Pradžia</a></li>
-        <li class="menu-item"><a href="NertiGaminiai.php">Nerti gaminiai</a></li>
-        <li class="menu-item"><a href="Muilas.php">Muilas</a></li>
-        <li class="menu-item"><a href="Hidrolatai.php">Hidrolatai</a></li>
-        <li class="menu-item"><a href="GeliuKompozicijos.php">Gėlės</a></li>
-        <li class="menu-item"><a href="DovanuPakavimas.php">Dovanų pakavimas</a></li>
-      </ul>
-    </nav>
-    <nav class="mobile-nav">
-      <ul id="mMenu" class="flex-container">
-        <li><a href=""><img src="ViolArt.png" alt="ViolArt logotipas"></a></li>
-        <li><a href="Pagrindinis.php">Pradžia</a></li>
-        <li><a href="NertiGaminiai.php">Nerti gaminiai</a></li>
-        <li><a href="Muilas.php">Muilas</a></li>
-        <li><a href="Hidrolatai.php">Hidrolatai</a></li>
-        <li><a href="GeliuKompozicijos.php">Gėlės</a></li>
-        <li><a href="DovanuPakavimas.php">Dovanų pakavimas</a></li>
-      </ul>
-      <div class="mobile-nav-background"></div> <!-- Naujas div elementas -->
-  <a href="javascript:void(0);" class="icon" onclick="toggleMobileNav()">
-    <i class="fa fa-bars"></i>
-      </a>
-    </nav>
-  </header>
-  <section id="connect" class="hero-main">
-    
-  <div id="map"></div>
-    <div class="hero-content">
-      <h2>ViolArt - rankų darbo kūriniai, kurie savyje talpina šilumą, energiją ir dvasią, kviečia stabtelti, pajusti, užuosti, nudžiugti ir pasigrožėti...</h2>
-    </div>
-    <!--method="post" action="form.php"-->
-    <form id="contact-form" class="contact-form" >
-        
-        <h3>Susisiekite su mumis!</h3>
-          <label for="name">Vardas:</label>
-          <input type="text" id="name" name="name" required>
+ 
+  <?php
+            include('/../app/views/header.php');
+            include('/../app/views/content.php');
+            include('/../app/views/footer.php');    
+        ?>
 
-          <label for="surname">Pavardė:</label>
-          <input type="text" id="surname" name="surname" required>
-
-          <label for="email">El. paštas:</label>
-          <input type="email" id="email" name="email" required>
-
-          <label for="message">Žinutė:</label>
-          <textarea id="message" name="message" required></textarea>
-
-          <button type="submit">Išsiųsti žinutę</button>
-        </form>
-       
-  </section>
-  <footer class="footer">
-          &copy;<?php echo date('Y'); ?> Violeta Pociuvienė || Visos teisės saugomos. Kopijuoti, platinti svetainės turinį be autorių sutikimo draudžiama.
-  </footer>
   <script>
     // ŽEMĖLAPIO FUNKCIONALUMAS PAGRINDINIAME PUSLAPYJE
     document.addEventListener("DOMContentLoaded", function (event) {
