@@ -1,22 +1,22 @@
 <?php 
-    if(isset($_POST['submit'])) {
-        $vardas = trim($_POST['name']);
-        $pavarde = trim($_POST['surname']);
-        $email = trim($_POST['email']);
-        $zinute = trim($_POST['message']);
+if(isset($_POST['submit'])) {
+    $vardas = isset($_POST['vardas']) ? trim($_POST['vardas']) : '';
+    $pavarde = isset($_POST['pavarde']) ? trim($_POST['pavarde']) : '';
+    $pastas = isset($_POST['pastas']) ? trim($_POST['pastas']) : '';
+    $zinute = isset($_POST['zinute']) ? trim($_POST['zinute']) : '';
 
-        if(!empty($vardas) && !empty($pavarde) && !empty($email)&& !empty($zinute)) {
-            if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-                $from = "$email";
-                $to = "dainius.frismantas@gmail.com";
-                $subject = "Nauja zinute";
-                $autorius = 'Nuo: ' . $vardas . ', ' . $email;
-                $zinute = htmlspecialchars($zinute);
-                //mail($to, $subject, $autorius, $zinute, $from);
-                //echo "<script>alert('Dekojame. Jusu zinute gauta. Netrukus susisieksime.');</script>";
-            }
+    if(!empty($vardas) && !empty($pavarde) && !empty($pastas) && !empty($zinute)) {
+        if(filter_var($pastas, FILTER_VALIDATE_EMAIL)){
+            $from = $pastas;
+            $to = "dainius.frismantas@gmail.com";
+            $subject = "Nauja žinutė";
+            $autorius = 'Nuo: ' . $vardas . ', ' . $pastas;
+            $zinute = htmlspecialchars($zinute);
+            //mail($to, $subject, $autorius, $zinute, $from);
+            //echo "<script>alert('Dekojame. Jusu zinute gauta. Netrukus susisieksime.');</script>";
+            
+            include 'db.php';
         }
-        include '../app/src/db.php';
     }
-    
+}
 

@@ -15,20 +15,19 @@
         exit();
     }
 
-    // Paruošiame SQL užklausą su parametrais
-    $query = $mysqli->prepare("INSERT INTO klientai (vardas, pavarde, pastas, zinute) VALUES (?, ?, ?, ?)");
+    $vardas = $mysqli->real_escape_string(isset($_POST['vardas']) ? $_POST['vardas'] : '');
+    $pavarde = $mysqli->real_escape_string(isset($_POST['pavarde']) ? $_POST['pavarde'] : '');
+    $pastas = $mysqli->real_escape_string(isset($_POST['pastas']) ? $_POST['pastas'] : '');
+    $zinute = $mysqli->real_escape_string(isset($_POST['zinute']) ? $_POST['zinute'] : '');
     
-    // Susiejame parametrus su reikšmėmis
-    // "ssss" nurodo, kad visi parametrai yra teksto tipo (string)
-    if (empty($_POST['name'])) {
-        echo 'Vardas yra privalomas laukas. Prašome užpildyti.';
-        exit();
-    }
-    $query->bind_param("ssss", $vardas, $pavarde, $email, $zinute);
 
-    // Įvykdome paruoštą užklausą
-    $query->execute();
-    
-    // Uždarome užklausos objektą
-    $query->close();
+    $sql = "INSERT INTO klientai (vardas, pavarde, pastas, zinute) VALUES ('$vardas', '$pavarde', '$pastas', '$zinute')";
+
+    if ($mysqli->query($sql) === TRUE) {
+        echo "Įrašas sėkmingai įterptas į duomenų bazę.";
+    } else {
+        echo "Klaida: " . $sql . "<br>" . $mysqli->error;
+    }
+
+    $mysqli->close();
 ?>

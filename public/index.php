@@ -1,6 +1,5 @@
 <?php
   require __DIR__ . '/../app/src/app.php';
-  include __DIR__ . '/../app/src/db.php';
   require __DIR__ . '/../app/views/header.php';
   require __DIR__ . '/../app/views/content.php';
   require __DIR__ . '/../app/views/footer.php';
