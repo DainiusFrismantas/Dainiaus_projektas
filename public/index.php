@@ -1,5 +1,10 @@
 <?php
-    require __DIR__ . '/../app/src/app.php';
+  require __DIR__ . '/../app/src/app.php';
+  include __DIR__ . '/../app/src/db.php';
+  require __DIR__ . '/../app/views/header.php';
+  require __DIR__ . '/../app/views/content.php';
+  require __DIR__ . '/../app/views/footer.php';
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,19 +14,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/../app/css/normalize.css">
- 
-  <link rel="stylesheet" href='/../app/css/style.css'>
+  <link rel="stylesheet" href="../app/css/normalize.css">
+  <link rel="stylesheet" href='../app/css/style.css'>
+   <!--Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" defer></script>
  <!-- SweetAlert CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
-<!-- SweetAlert JS -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.js" defer></script>
-<!-- Krepšelio JS -->
-<script src="/../app/js/contact.js" defer></script>
-<script src="https://kit.fontawesome.com/adaa5eca50.js" defer></script>
-<script src="/../app/js/toggleMobileNav.js" defer></script>
+
   <title>ViolArt</title>
   <style>
 /* Header */
@@ -63,15 +62,6 @@ header {
 
 
 
-
-
-
-
-
-
-
-
-
     /* Spalvų taisyklė skirtuke */
     .main-nav a:hover {
       color: #FF8C00;
@@ -80,7 +70,7 @@ header {
 
     /*Pagrindinė background nuotrauka pagrindiniame puslapyje */
     .hero-main {
-      background-image: url('app/images/pagrindine.jpg');
+      background-image: url('../app/images/pagrindine.jpg');
       background-position: center;
       background-size: cover;
       width: 100%;
@@ -164,135 +154,25 @@ header {
 
 
 
-
-
-  .mobile-nav {
-  display: none;
-}
-
-
- /* Kitimas ekranų dydžiui < 768px (planšetė) */
-@media screen and (max-width: 768px) {
-    /* Slėpti meniu punktus */
-    .main-nav .menu-item {
-      display: none;
-    }
-
-    /* Rodyti tik logotipą ir menu-toggle */
-    .main-nav .menu-toggle {
-      display: block;
-    }
-
-        /* Mobile-nav stiliai */
-        .mobile-nav {
-      position: relative;
-      text-align: center;
-    }
-    .mobile-nav .flex-container {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #555555;
-      list-style: none;
-      padding: 20px;
-      text-align: center;
-      display: none;
-      z-index: 2;
-    }
-
-    .mobile-nav .flex-container li {
-      margin-bottom: 15px;
-    }
-
-    .mobile-nav .flex-container a {
-      color: white;
-      text-decoration: none;
-      font-size: 18px;
-    }
-
-    .mobile-nav .menu-toggle {
-      position: relative;
-      z-index: 3;
-    }
-
-    .mobile-nav .mobile-nav-background {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
-      display: none;
-    }
-
-
-
-    .hero-content h2{
-      font-size: 18px; 
-    }
-
-
-    #contact-form {
-    text-align: center;
-    color: #98479;
-
-}
-}
- /* Kitimas ekranų dydžiui >= 1024px (didžiulis ekranas) */
- @media screen and (min-width: 768px) {
-    /* Slėpti burgerio ikoną */
-    .main-nav .menu-toggle {
-      display: none;
-    }
-  }
+  
   </style>
 </head>
 
 <body>
  
   <?php
-            include('/../app/views/header.php');
-            include('/../app/views/content.php');
-            include('/../app/views/footer.php');    
-        ?>
-
-  <script>
-    // ŽEMĖLAPIO FUNKCIONALUMAS PAGRINDINIAME PUSLAPYJE
-    document.addEventListener("DOMContentLoaded", function (event) {
-        // Žemėlapis
-        var mymap = L.map('map')
-            .setView([56.303503, 22.280236], 13);
-
-        // Kartografinių pagrindų sluoksnių sąrašas
-        var baseLayers = {
-            "OpenStreetMap": L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
-                , maxZoom: 12
-                , minZoom: 7
-            }).addTo(mymap)
-            , "Esri World Street Map": L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-                attribution: 'Tiles &copy; Esri'
-                , maxZoom: 12
-                , minZoom: 7
-            })
-        };
-
-        // Simbolis žymintis vietą
-        var marker = L.marker([56.303503, 22.280236])
-            .addTo(mymap);
-
-        // Iššokantis langas tik paspaudus ant ikonėlės
-        marker.on('click', function () {
-            marker.bindPopup("<b>Sveiki!</b><br>Atvykite prekių apžiūrėti gyvai!")
-                .openPopup();
-        });
-
-        // Pridėti valdiklį žemėlapio kartografiniam pagrindui keisti
-        L.control.layers(baseLayers)
-            .addTo(mymap);
-    });
-</script>
+            include("../app/views/header.php");
+            include("../app/views/content.php");
+            include("../app/views/footer.php");    
+  ?>
+<!-- SweetAlert JS -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- Krepšelio JS -->
+<script src="../app/js/contact.js" ></script>
+<script src="https://kit.fontawesome.com/adaa5eca50.js"></script>
+<script src="../app/js/toggleMobileNav.js"></script>
+<!-- Žemėlapio JS -->
+<script src="../app/js/map.js"></script>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 </body>
 </html>
