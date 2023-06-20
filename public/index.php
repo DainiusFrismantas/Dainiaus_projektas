@@ -1,8 +1,8 @@
 <?php
   require __DIR__ . '/../app/src/app.php';
   require __DIR__ . '/../app/src/db.php';
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,11 +17,8 @@
     <!-- SweetAlert CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
     <title>ViolArt</title>
-
 </head>
-
       <body>
- 
       <?php
             include('../app/views/header.php');
             include('../app/views/content.php');
@@ -29,7 +26,7 @@
       ?>
         <!-- SweetAlert JS -->
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-        <!-- Krepšelio JS -->
+        <!-- Kontakto formos JS -->
         <script src="../app/js/contact.js" ></script>
         <script src="https://kit.fontawesome.com/adaa5eca50.js"></script>
         <!-- Mobile JS -->

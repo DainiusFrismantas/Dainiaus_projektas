@@ -7,21 +7,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <!--CSS -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/stilius.css">
+    <link rel="stylesheet" href="../app/css/normalize.css">
+    <link rel="stylesheet" href="../app/css/style.css">
     <!-- SweetAlert CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
     <!-- SweetAlert JS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.js" defer></script>
     <!-- Krepšelio JS -->
     <script src="js/cart.js" defer></script>
-    <title>Gėlių kompozicijos</title>
+    <title>Dovanų pakavimas</title>
 </head>
 <body>
-        <?php
-            include('../app/views/header.php');
-            include('../app/views/footer.php');    
-        ?>
+    <?php include('../app/views/header.php');?>
     <section class="hero-dovanos">
         <div class="container">
             <h2>Dovanų pakavimas</h2>
@@ -31,7 +28,7 @@
                 <div class="row">
                      <!-- Prekė Nr. 1 -->
                     <div class="mySlidesfade">
-                        <img src="images/DovanuPakavimas1.png" alt = 'Dovanų pakavimas Nr.1'>
+                        <img src="../app/images/DovanuPakavimas1.png" alt = 'Dovanų pakavimas Nr.1'>
                         <div class="price">5 €</div>
                         <div class="buy">
                             <button class="js-cd-add-to-cart" 
@@ -44,7 +41,7 @@
                     </div>
                     <!-- Prekė Nr. 2 -->
                     <div class="mySlidesfade">
-                        <img src="images/DovanuPakavimas2.png" alt = 'Dovanų pakavimas Nr.2'>
+                        <img src="../app/images/DovanuPakavimas2.png" alt = 'Dovanų pakavimas Nr.2'>
                         <div class="price">7 €</div>
                         <div class="buy">
                             <button class="js-cd-add-to-cart" 
@@ -61,7 +58,7 @@
                 <div class="row">
                     <!-- Prekė Nr. 3 -->
                     <div class="mySlidesfade">
-                        <img src="images/DovanuPakavimas3.png" alt = 'Dovanų pakavimas Nr.3'>
+                        <img src="../app/images/DovanuPakavimas3.png" alt = 'Dovanų pakavimas Nr.3'>
                         <div class="price">9 €</div>
                         <div class="buy">
                             <button class="js-cd-add-to-cart" 
@@ -74,7 +71,7 @@
                     </div>
                     <!-- Prekė Nr. 4 -->
                       <div class="mySlidesfade">
-                          <img src="images/DovanuPakavimas4.png" alt = 'Dovanų pakavimas Nr.4'>
+                          <img src="../app/images/DovanuPakavimas4.png" alt = 'Dovanų pakavimas Nr.4'>
                           <div class="price">8 €</div>
                           <div class="buy">
                         <button class="js-cd-add-to-cart" 
@@ -88,22 +85,10 @@
             </div>
         </div>
     </section>
-
-    <div class="spacer"></div> 
-
-<!-- Krepšelio SVG -->
-        <button class="cart-icon" onclick="toggleCart()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16"> <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/> </svg> 
-            <span class="notification" id="cart-items-count">0</span>
-        </button>
-
-<!-- Krepšelio HTML -->
-        <div id="cart" class="cart-container">
-            <h3>Krepšelis</h3>
-            <ul id="cart-items"><!-- Čia bus įdėtos prekės iš krepšelio --></ul>
-            <div class="total">Bendra suma: <span id="cart-total">0</span> €</div>
-            <button onclick="clearCart()">Išvalyti krepšelį</button>
-        </div>
+        <?php 
+        include('../app/views/cart.php');
+        include('../app/views/footer.php');
+        ?>
     </body>
 </html>
 
