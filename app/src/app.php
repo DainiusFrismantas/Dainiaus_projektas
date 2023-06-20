@@ -15,8 +15,6 @@ if(isset($_POST['submit'])) {
             $zinute = htmlspecialchars($zinute);
             //mail($to, $subject, $autorius, $zinute, $from);
             //echo "<script>alert('Dekojame. Jusu zinute gauta. Netrukus susisieksime.');</script>";
-            
-       
         }
     }
     include 'db.php';
