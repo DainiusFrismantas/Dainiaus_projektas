@@ -18,22 +18,10 @@
     <title>Gėlių kompozicijos</title>
 </head>
 <body>
-    <header class="site-header">
-        <nav class="main-nav">
-            <ul class="flex-container">
-                <li><a href=""><img src="ViolArt.png" alt="ViolArt logotipas"></a></li>
-                <li><a href="Pagrindinis.php">Pradžia</a></li>
-                <li><a href="NertiGaminiai.php">Nerti gaminiai</a></li>
-                <li><a href="Muilas.php">Muilas</a></li>
-                <li><a href="Hidrolatai.php">Hidrolatai</a></li>
-                <li><a href="GeliuKompozicijos.php">Gėlių kompozicijos</a></li>
-                <li><a href="DovanuPakavimas.php">Dovanų pakavimas</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="spacer"></div> 
-
+        <?php
+            include('../app/views/header.php');
+            include('../app/views/footer.php');    
+        ?>
     <section class="hero-hidro">
         <div class="container">
             <h2>Hidrolatai - distiliuoti gėlių / vaistažolių vandenys</h2>
@@ -95,8 +83,6 @@
                 </div>
             </div>
     </section>
-    
-    <div class="spacer"></div> 
 
 <!-- Krepšelio SVG -->
         <button class="cart-icon" onclick="toggleCart()">
@@ -111,10 +97,5 @@
             <div class="total">Bendra suma: <span id="cart-total">0</span> €</div>
             <button onclick="clearCart()">Išvalyti krepšelį</button>
         </div>
-
-<!-- Footer -->
-        <footer class="footer">
-            <p>&copy; &copy;2023 Violeta Pociuvienė || Visos teisės saugomos. Kopijuoti, platinti svetainės turinį be autorių sutikimo draudžiama.</p>
-        </footer>
     </body>
 </html>

@@ -21,13 +21,10 @@
     $zinute = $mysqli->real_escape_string(isset($_POST['zinute']) ? $_POST['zinute'] : '');
     
 
-    $sql = "INSERT INTO klientai (vardas, pavarde, pastas, zinute) VALUES ('$vardas', '$pavarde', '$pastas', '$zinute')";
+    mysqli_query($mysqli, "INSERT INTO klientai (vardas, pavarde, pastas, zinute) 
+    VALUES('$_POST[vardas]', '$_POST[pavarde]', '$_POST[pastas]','$_POST[zinute]')");
 
-    if ($mysqli->query($sql) === TRUE) {
-        echo "Įrašas sėkmingai įterptas į duomenų bazę.";
-    } else {
-        echo "Klaida: " . $sql . "<br>" . $mysqli->error;
-    }
 
-    $mysqli->close();
+   /* $sql = "INSERT INTO klientai (vardas, pavarde, pastas, zinute) VALUES ('$vardas', '$pavarde', '$pastas', '$zinute')";*/
+
 ?>

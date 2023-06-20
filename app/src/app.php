@@ -1,4 +1,5 @@
 <?php 
+
 if(isset($_POST['submit'])) {
     $vardas = isset($_POST['vardas']) ? trim($_POST['vardas']) : '';
     $pavarde = isset($_POST['pavarde']) ? trim($_POST['pavarde']) : '';
@@ -15,8 +16,9 @@ if(isset($_POST['submit'])) {
             //mail($to, $subject, $autorius, $zinute, $from);
             //echo "<script>alert('Dekojame. Jusu zinute gauta. Netrukus susisieksime.');</script>";
             
-            include 'db.php';
+       
         }
     }
+    include 'db.php';
 }
 
