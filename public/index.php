@@ -25,7 +25,7 @@
         <!-- SweetAlert JS -->
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <!-- Kontakto formos JS -->
-        <script src="../app/js/contact.js" ></script>
+        <script src="../app/js/contact.js"></script>
         <script src="https://kit.fontawesome.com/adaa5eca50.js"></script>
         <!-- Mobile JS -->
         <script src="../app/js/toggleMobileNav.js"></script>

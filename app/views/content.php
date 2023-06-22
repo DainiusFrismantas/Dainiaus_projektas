@@ -16,7 +16,6 @@
         <button type="submit" name="submit">Išsiųsti žinutę</button>
     </form>
 </section>
-
 <script>
 const contactForm = document.getElementById('contact-form');
 
@@ -26,7 +25,5 @@ contactForm.addEventListener('submit', function(event) {
 
   // Pateikite swal pranešimą su gautais duomenimis
   swal("Žinutė sėkmingai išsiųsta!", "Atsakysime el. paštu.", "success")
-  // Išjungti numatytąjį pranešimą iš localhost
-  event.stopImmediatePropagation();
 });
 </script>

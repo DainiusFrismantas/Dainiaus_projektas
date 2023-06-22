@@ -15,7 +15,6 @@ if(isset($_POST['submit'])) {
             $autorius = 'Nuo: ' . $vardas . ', ' . $pastas;
             $zinute = htmlspecialchars($zinute);
         }
-    }
-    
+    } 
 }
 
