@@ -4,7 +4,6 @@
             <span class="notification" id="cart-items-count">0</span>
         </button>
         
-
 <!-- Krepšelio HTML -->
 <div id="cart" class="cart-container">
             <h3>Krepšelis</h3>

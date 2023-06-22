@@ -24,13 +24,9 @@ const contactForm = document.getElementById('contact-form');
 contactForm.addEventListener('submit', function(event) {
   event.preventDefault();
 
-  
   // Pateikite swal pranešimą su gautais duomenimis
   swal("Žinutė sėkmingai išsiųsta!", "Atsakysime el. paštu.", "success")
   // Išjungti numatytąjį pranešimą iš localhost
   event.stopImmediatePropagation();
-
-  
-
 });
 </script>
