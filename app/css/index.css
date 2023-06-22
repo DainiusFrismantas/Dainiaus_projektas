@@ -68,7 +68,7 @@ header {
 /*-------------------------------------------------------------------------------------------------------------- */
  /*Pagrindinė background nuotrauka pagrindiniame puslapyje */
  .hero-main {
-    background-image: url('/../app/images/pagrindine.jpg');
+    background-image: url('../images/pagrindine.jpg');
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -124,13 +124,13 @@ position: absolute;
 top: 40%;
 right: 0%;
 transform: translate(-10%, -50%);
-z-index: 3;
 background-color: #fff;
-padding: 30px;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-background-color: rgba(255, 255, 255, 0.8);
+padding: 50px;
+border-radius: 20px;
+box-shadow: 0 0 20px rgba(108, 108, 108, 0.2);
+background-color: rgba(255, 255, 255, 0.7);
 color: #498479;
+width: 300px; 
   }
   
 #contact-form label,
@@ -143,7 +143,7 @@ margin-bottom: 10px;
     }
   
 #contact-form button {
-padding: 20px;
+padding: 30px;
 background-color: #498479;
 color: #fff;
 border: none;
@@ -151,27 +151,38 @@ border-radius: 5px;
 cursor: pointer;
   }
   
-#contact-form button:hover {background-color: #45a049;}
+#contact-form button:hover {background-color: #1f4322;}
   
 #contact-form h3 {
 margin-top: 0;
-margin-bottom: 10px;
+margin-bottom: 20px;
 font-size: 24px;
 font-weight: 600;
 }
 
+#name,
+#surname,
+#email {
+  width: 500px; /* Pakeiskite norimu plotį */
+  height: 30px; /* Pakeiskite norimu aukščiu */
+}
+
+#message {
+  width: 500px; /* Pakeiskite norimu plotį */
+  height: 50px; /* Pakeiskite norimu aukščiu */
+}
 /*---------------------------------------------------------------------------- */  
 /*Žemėlapiui */
 #map {
 position: absolute;
-top: 80%;
+top: 85%;
 right: 0%;
 transform: translate(-10%, -50%);
 z-index: 3;
 width: 80%;
 max-width: 400px;
 height: 500px;
-border-radius: 10px;
+border-radius: 20px;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
@@ -199,7 +210,7 @@ border: 1px solid gray;
 .mobile-nav {display: none;}
 
 /* Kitimas ekranų dydžiui < 768px (planšetė) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 500px){
 /* Slėpti meniu punktus */
 .main-nav .menu-item {display: none;}
 
@@ -253,9 +264,108 @@ display: none;
 
 #contact-form {
 text-align: center;
-color: #555555;  
+color: #498479; 
+padding: 10px;
+width: 250px;
+transform: translate(-10%, 10%);
+
   }
+
+#contact-form h3 {
+margin-top: 0;
+margin-bottom: 10px;
+font-size: 18px;
+font-weight: 600;
+    }
+
+
+#map {
+max-width: 280px;
+height: 400px;
+        }
+      
 }
+
+/* Kitimas ekranų dydžiui < 500px (mobiliems) */
+
+  @media screen and (max-width: 500px){
+    /* Slėpti meniu punktus */
+    .main-nav .menu-item {display: none;}
+    
+    /* Rodyti tik logotipą ir menu-toggle */
+    .main-nav .menu-toggle {display: block;}
+    
+    /* Mobile-nav stiliai */
+  .mobile-nav {
+    position: relative;
+    text-align: center;
+    }
+    
+.mobile-nav .flex-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #555555;
+    list-style: none;
+    padding: 5px;
+    text-align: center;
+    display: none;
+    z-index: 2;
+        }
+    
+.mobile-nav .flex-container li {margin-bottom: 15px;}
+    
+.mobile-nav .flex-container a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+        }
+    
+.mobile-nav .menu-toggle {
+    position: relative;
+        }
+    
+.mobile-nav .mobile-nav-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+        }
+    
+.hero-content h2{font-size: 14px;}
+    
+#contact-form {
+    text-align: center;
+    color: #498479; 
+    padding: 5px;
+    width: 170px;
+    padding: 40px;
+    
+      }
+    
+#contact-form h3 {
+  margin-bottom: 10px;
+  font-size: 18px;}
+ 
+  
+#name,
+#surname,
+#email,
+#zinute {
+  font-size:12px;
+}
+#map {
+    max-width: 250px;
+    height: 400px;}
+          
+    }
+.footer{font-size: 11px;}
+
 
 /* Kitimas ekranų dydžiui >= 1024px (didžiulis ekranas) */
 @media screen and (min-width: 768px) {

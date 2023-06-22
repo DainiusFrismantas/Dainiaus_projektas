@@ -3,7 +3,7 @@
     <div class="hero-content">
     <h2>ViolArt - rankų darbo kūriniai, kurie savyje talpina šilumą, energiją ir dvasią, kviečia stabtelti, pajusti, užuosti, nudžiugti ir pasigrožėti...</h2>
     </div>
-    <form id="contact-form" class="contact-form" action="../app/src/app.php" method="post">
+    <form id="contact-form" class="contact-form" method="post">
         <h3>Susisiekite su mumis!</h3>
         <label for="name">Vardas:</label>
         <input type="text" id="name" name="vardas" required autofocus>
@@ -16,3 +16,21 @@
         <button type="submit" name="submit">Išsiųsti žinutę</button>
     </form>
 </section>
+
+<script>
+const contactForm = document.getElementById('contact-form');
+
+// Prijunkite 'submit' įvykį prie formos 4 eilute turi keistis, apsirasyti veiksm1
+contactForm.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  
+  // Pateikite swal pranešimą su gautais duomenimis
+  swal("Žinutė sėkmingai išsiųsta!", "Atsakysime el. paštu.", "success")
+  // Išjungti numatytąjį pranešimą iš localhost
+  event.stopImmediatePropagation();
+
+  
+
+});
+</script>

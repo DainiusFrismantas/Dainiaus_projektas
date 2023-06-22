@@ -24,7 +24,27 @@
     mysqli_query($mysqli, "INSERT INTO klientai (vardas, pavarde, pastas, zinute) 
     VALUES('$_POST[vardas]', '$_POST[pavarde]', '$_POST[pastas]','$_POST[zinute]')");
 
+ /*6ioje vietoje turi buti iskviesta contact.js funkcija, kad duomenys nusisiustu i db.
+   
+   $sql = "INSERT INTO klientai (vardas, pavarde, pastas, zinute) VALUES ('$vardas', '$pavarde', '$pastas', '$zinute')";*/
 
-   /* $sql = "INSERT INTO klientai (vardas, pavarde, pastas, zinute) VALUES ('$vardas', '$pavarde', '$pastas', '$zinute')";*/
-
+/*Iškviesti JavaScript funkciją iš PHP
+echo '<script>myFunction();</script>';
 ?>
+
+<script>
+// JavaScript funkcija
+function myFunction() {
+    // Pateikite swal pranešimą su gautais duomenimis
+    swal("Žinutė sėkmingai išsiųsta!", "Atsakysime el. paštu.", "success");
+}
+
+const contactForm = document.getElementById('contact-form');
+
+// Prijunkite 'submit' įvykį prie formos ir išvalykite formos laukus
+contactForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    contactForm.reset();
+});
+</script>
+*/
