@@ -22,8 +22,9 @@
     
 
     mysqli_query($mysqli, "INSERT INTO klientai (vardas, pavarde, pastas, zinute) 
-    VALUES('$_POST[vardas]', '$_POST[pavarde]', '$_POST[pastas]','$_POST[zinute]')");
-
+    VALUES('$vardas', '$pavarde', '$pastas','$zinute')");
+    
+echo '<script>myFunction();</script>';
  /*6ioje vietoje turi buti iskviesta contact.js funkcija, kad duomenys nusisiustu i db.
    
    $sql = "INSERT INTO klientai (vardas, pavarde, pastas, zinute) VALUES ('$vardas', '$pavarde', '$pastas', '$zinute')";*/

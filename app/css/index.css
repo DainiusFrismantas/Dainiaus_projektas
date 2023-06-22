@@ -175,7 +175,7 @@ font-weight: 600;
 /*Žemėlapiui */
 #map {
 position: absolute;
-top: 85%;
+top: 82%;
 right: 0%;
 transform: translate(-10%, -50%);
 z-index: 3;
