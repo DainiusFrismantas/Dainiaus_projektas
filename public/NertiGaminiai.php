@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <!--CSS -->
     <link rel="stylesheet" href="../app/css/normalize.css">
-    <link rel="stylesheet" href="../app/css/style.css">
+    <link rel="stylesheet" href="../app/css/index.css">
     <!-- SweetAlert CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
     <!-- SweetAlert JS -->
@@ -19,15 +19,14 @@
 </head>
 <body>
     <?php include('../app/views/header.php');?>
-
     <section class="hero-nerti">
         <div class="container">
-            <h2>Stalo padėkliukai, rankinės, pirštinės, kojinės,krepšeliai ir dėžutės.</h2> <h4><br><b>Nėrimas</b> - malonumas savo rankomis sukurti daiktą, pajusti jo atsiradimo kelią nuo idėjos iki paskutinės kilpelės. Neriant susikaupia didelė kūrybinė energija ir potencialas, kurį norisi įgalinti. Tai prasminga ir nesudėtinga veikla.</h4>
+            <h2>Stalo padėkliukai, rankinės, pirštinės, kojinės, krepšeliai ir dėžutės.</h2> <h4><br><b>Nėrimas</b> - malonumas savo rankomis sukurti daiktą, pajusti jo atsiradimo kelią nuo idėjos iki paskutinės kilpelės. Neriant susikaupia didelė kūrybinė energija ir potencialas, kurį norisi įgalinti. Tai prasminga ir nesudėtinga veikla.</h4>
             <!-- Pirma nuotraukų eilė -->
             <div class="row">
                 <!-- Prekė Nr. 1 -->
                 <div class="mySlidesfade">
-                    <img src="../app/images/images/NertiGaminiai1.png" alt = 'Nerta rankinė'>
+                    <img src="../app/images/NertiGaminiai1.png" alt = 'Nerta rankinė'>
                     <div class="price">25 €</div>
                     <div class="buy">
                     <button class="js-cd-add-to-cart" 
@@ -40,7 +39,7 @@
                 </div>
                 <!-- Prekė Nr. 2 -->
                 <div class="mySlidesfade">
-                    <img src="../app/images/images/NertiGaminiai2.png" alt = 'Nerti padėkliukai Nr. 1'>
+                    <img src="../app/images/NertiGaminiai2.png" alt = 'Nerti padėkliukai Nr. 1'>
                     <div class="price">25 €</div>
                     <div class="buy">
                     <button class="js-cd-add-to-cart" 
@@ -57,7 +56,7 @@
             <div class="row">
                 <!-- Prekė Nr. 3 -->
                 <div class="mySlidesfade">
-                    <img src="../app/images/images/NertiGaminiai3.png" alt = 'Nertos rankinės'>
+                    <img src="../app/images/NertiGaminiai3.png" alt = 'Nertos rankinės'>
                     <div class="price">50 €</div>
                     <div class="buy">
                     <button class="js-cd-add-to-cart" 
@@ -70,7 +69,7 @@
                 </div>
                 <!-- Prekė Nr. 4 -->
                 <div class="mySlidesfade">
-                    <img src="../app/images/images/NertiGaminiai4.png" alt = 'Nerti padėkliukai Nr. 2'>
+                    <img src="../app/images/NertiGaminiai4.png" alt = 'Nerti padėkliukai Nr. 2'>
                     <div class="price">25 €</div>
                     <div class="buy">
                     <button class="js-cd-add-to-cart" 

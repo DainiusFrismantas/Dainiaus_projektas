@@ -1,7 +1,7 @@
 <section id="connect" class="hero-main">
     <div id="map"></div>
     <div class="hero-content">
-    <h2>ViolArt - rankų darbo kūriniai, kurie savyje talpina šilumą, energiją ir dvasią, kviečia stabtelti, pajusti, užuosti, nudžiugti ir pasigrožėti...</h2>
+    <h1>ViolArt - rankų darbo kūriniai, kurie savyje talpina šilumą, energiją ir dvasią, kviečia stabtelti, pajusti, užuosti, nudžiugti ir pasigrožėti...</h1>
     </div>
     <form id="contact-form" class="contact-form" method="post">
         <h3>Susisiekite su mumis!</h3>

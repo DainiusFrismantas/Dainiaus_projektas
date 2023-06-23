@@ -61,7 +61,7 @@ if (newQuantity > 15) {
 Swal.fire({
   icon: 'error',
   title: 'Klaida!',
-  text: 'Pasirinkote per daug prekių!',
+  text: 'Pasirinkote per daug prekių! Prekių skaičius ribotas!',
 });
 return; // Neleidžiame padidinti kiekio virš 15
 }

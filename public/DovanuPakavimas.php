@@ -8,13 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <!--CSS -->
     <link rel="stylesheet" href="../app/css/normalize.css">
-    <link rel="stylesheet" href="../app/css/style.css">
+    <link rel="stylesheet" href="../app/css/index.css">
     <!-- SweetAlert CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
     <!-- SweetAlert JS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.js" defer></script>
     <!-- Krepšelio JS -->
-    <script src="js/cart.js" defer></script>
+    <script src="../app/js/cart.js" defer></script>
     <title>Dovanų pakavimas</title>
 </head>
 <body>
@@ -89,6 +89,7 @@
         include('../app/views/cart.php');
         include('../app/views/footer.php');
         ?>
+
     </body>
 </html>
 
