@@ -14,7 +14,7 @@
     <!-- SweetAlert JS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.js" defer></script>
     <!-- Krepšelio JS -->
-    <script src="js/cart.js" defer></script>
+    <script src="../app/js/cart.js" defer></script>
     <title>Hidrolatai</title>
 </head>
 <body>

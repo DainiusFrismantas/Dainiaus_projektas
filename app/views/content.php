@@ -3,7 +3,7 @@
     <div class="hero-content">
     <h1>ViolArt - rankų darbo kūriniai, kurie savyje talpina šilumą, energiją ir dvasią, kviečia stabtelti, pajusti, užuosti, nudžiugti ir pasigrožėti...</h1>
     </div>
-    <form id="contact-form" class="contact-form" method="post">
+    <form id="contact-form" class="contact-form" method="post" action="index.php">
         <h3>Susisiekite su mumis!</h3>
         <label for="name">Vardas:</label>
         <input type="text" id="name" name="vardas" required autofocus>
@@ -13,6 +13,17 @@
         <input type="email" id="email" name="pastas" required>
         <label for="message">Jūsų žinutė:</label>
         <textarea id="message" name="zinute" required></textarea>
-        <button type="submit" name="submit">Išsiųsti žinutę</button>
+        <button type="submit" name="submit-form">Išsiųsti žinutę</button>
     </form>
 </section>
+<script>
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    this.reset();
+    myFunction();
+});
+
+function myFunction() {
+    swal("Žinutė sėkmingai išsiųsta!", "Atsakysime el. paštu.", "success");
+}
+</script>
