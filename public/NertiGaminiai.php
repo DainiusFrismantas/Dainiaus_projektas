@@ -32,7 +32,7 @@
                     <button class="js-cd-add-to-cart" 
                         data-item-id="1"
                         data-price="25" 
-                        onclick="addToCart('Rožinė gėlių kompozicija', 1, 25)">
+                        onclick="addToCart('Nerta rankinė', 1, 25)">
                         Pridėti į krepšelį
                         </button>
                     </div>
@@ -45,7 +45,7 @@
                     <button class="js-cd-add-to-cart" 
                         data-item-id="2"
                         data-price="25" 
-                        onclick="addToCart('Rožinė gėlių kompozicija', 1, 25)">
+                        onclick="addToCart('Nerti padėkliukai Nr. 1', 1, 25)">
                         Pridėti į krepšelį
                     </button>
                     </div>
@@ -62,7 +62,7 @@
                     <button class="js-cd-add-to-cart" 
                         data-item-id="3"
                         data-price="50" 
-                        onclick="addToCart('Rožinė gėlių kompozicija', 1, 50)">
+                        onclick="addToCart('Nertos rankinės', 1, 50)">
                         Pridėti į krepšelį
                     </button>
                     </div>
@@ -75,7 +75,7 @@
                     <button class="js-cd-add-to-cart" 
                         data-item-id="4"
                         data-price="25" 
-                        onclick="addToCart('Rožinė gėlių kompozicija', 1, 25)">
+                        onclick="addToCart('Nerti padėkliukai Nr. 2', 1, 25)">
                         Pridėti į krepšelį
                     </button>
                     </div>

@@ -19,8 +19,6 @@ if (isset($_POST['submit-form'])) {
             mysqli_query($mysqli, "INSERT INTO klientai (vardas, pavarde, pastas, zinute) 
             VALUES('$vardas', '$pavarde', '$pastas','$zinute')");
             
-            // Display the SweetAlert message
-            echo "<script>myFunction();</script>";
         }
     }
 }

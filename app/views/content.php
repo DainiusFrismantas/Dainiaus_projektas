@@ -16,14 +16,3 @@
         <button type="submit" name="submit-form">Išsiųsti žinutę</button>
     </form>
 </section>
-<script>
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    this.reset();
-    myFunction();
-});
-
-function myFunction() {
-    swal("Žinutė sėkmingai išsiųsta!", "Atsakysime el. paštu.", "success");
-}
-</script>

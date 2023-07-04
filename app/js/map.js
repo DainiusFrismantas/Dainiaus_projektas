@@ -8,12 +8,12 @@
     var baseLayers = {
         "OpenStreetMap": L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
-            , maxZoom: 12
+            , maxZoom: 16
             , minZoom: 7
         }).addTo(mymap)
         , "Esri World Street Map": L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
             attribution: 'Tiles &copy; Esri'
-            , maxZoom: 12
+            , maxZoom: 16
             , minZoom: 7
         })
     };
