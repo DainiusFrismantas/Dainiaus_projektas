@@ -307,7 +307,11 @@ font-weight: 600;
 max-width: 280px;
 height: 400px;
         }
-      
+.mySlidesfade img {
+  width: 50%;
+  height: 50px;
+  border-radius: 10px;
+}      
 }
 
 /* Kitimas ekranų dydžiui < 500px (mobiliems) */
@@ -389,6 +393,13 @@ height: 400px;
           
 
 .footer{font-size: 11px;}
+
+.mySlidesfade img {
+  width: 50%;
+  height: 50px;
+  border-radius: 10px;
+}
+
 }
 
 /* Kitimas ekranų dydžiui >= 1024px (didžiulis ekranas) */
