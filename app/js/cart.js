@@ -101,6 +101,7 @@ function clearCart() {
 //  Ši funkcija keičia krepšelio rodymo būseną. Ji keičia CSS stilių savybę display tarp block ir none, taip slepdama arba rodydama krepšelį vartotojui.
 function toggleCart() {
   var cart = document.getElementById('cart');
+  cart.classList.toggle('hidden'); // Prideda arba pašalina klasę "hidden" iš krepšelio elemento
   if (cart.style.display === 'block') {
     cart.style.display = 'none';
   } else {

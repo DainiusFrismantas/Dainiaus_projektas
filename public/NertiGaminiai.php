@@ -34,9 +34,9 @@
                         data-price="25" 
                         onclick="addToCart('Nerta rankinė', 1, 25)">
                         Pridėti į krepšelį
-                        </button>
-                    </div>
+                    </button>
                 </div>
+            </div>
                 <!-- Prekė Nr. 2 -->
                 <div class="mySlidesfade">
                     <img src="../app/images/NertiGaminiai2.png" alt = 'Nerti padėkliukai Nr. 1'>
@@ -65,8 +65,8 @@
                         onclick="addToCart('Nertos rankinės', 1, 50)">
                         Pridėti į krepšelį
                     </button>
-                    </div>
                 </div>
+            </div>
                 <!-- Prekė Nr. 4 -->
                 <div class="mySlidesfade">
                     <img src="../app/images/NertiGaminiai4.png" alt = 'Nerti padėkliukai Nr. 2'>

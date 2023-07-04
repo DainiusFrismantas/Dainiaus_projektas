@@ -5,7 +5,7 @@
         </button>
         
 <!-- Krepšelio HTML -->
-<div id="cart" class="cart-container">
+<div id="cart" class="cart-container hidden">
             <h3>Krepšelis</h3>
             <ul id="cart-items"><!-- Čia bus įdėtos prekės iš krepšelio --></ul>
             <div class="total">Bendra suma: <span id="cart-total">0</span> €</div>

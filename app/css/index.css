@@ -3,6 +3,9 @@
 
 a {color: #498479;}
 
+.hidden {
+  display: none;
+}
 html {
   font-family: 'Lora', serif;
   font-size: 16px;
@@ -241,6 +244,7 @@ border: 1px solid gray;
 /* Rodyti tik logotipą ir menu-toggle */
 .main-nav .menu-toggle {display: block;}
 
+
 /* Mobile-nav stiliai */
 .mobile-nav {
 position: relative;
@@ -328,7 +332,30 @@ height: 400px;
     position: relative;
     text-align: center;
     }
+    h2 {
+      border: 2px solid #498479; /* Spalva ir stilius apvado linijoms */
+      padding: 10px; /* Atstumas tarp teksto ir apvado linijų */
+      font-size: 0.8rem;
+      border-radius: 10px; /* Skritulinio apvado išlenkimas */
+      background-color: #f0f0f0; /* Fono spalva */
+      text-align: center; /* Teksto centrinis lygiavimas */
+    }
     
+    h4 {
+      border-bottom: 1px solid #498479; /* Apvado linija po h4 teksto */
+      padding-bottom: 10px; /* Atstumas tarp teksto ir apvado linijos */
+      margin-bottom: 20px; /* Atstumas tarp h4 elemento ir kito turinio */
+      position: relative;
+      display: inline-block;
+      font-size: 0.6rem;
+      margin-bottom: 20px;
+    }
+    h1 {
+
+      color: #498479;
+      font-size: 20px;
+      font-weight: 600;
+    }   
 .mobile-nav .flex-container {
     position: absolute;
     top: 0;
@@ -348,7 +375,7 @@ height: 400px;
 .mobile-nav .flex-container a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
         }
     
 .mobile-nav .menu-toggle {
@@ -378,7 +405,7 @@ height: 400px;
     
 #contact-form h3 {
   margin-bottom: 10px;
-  font-size: 18px;}
+  font-size: 16px;}
  
   
 #name,
@@ -399,7 +426,15 @@ height: 400px;
   height: 50px;
   border-radius: 10px;
 }
+.row {
+  display: flex;
+}
 
+.mySlidesfade {
+  flex: 1;
+  text-align: center;
+  margin: 5px;
+}
 }
 
 /* Kitimas ekranų dydžiui >= 1024px (didžiulis ekranas) */
@@ -427,8 +462,8 @@ height: 400px;
 
 .cart-icon {
   position: fixed;
-  top: 100px;
-  right: 20px;
+  top: 180px;
+  right: 10px;
   background-color: transparent;
   border: none;
   cursor: pointer;
